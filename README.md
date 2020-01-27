@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ green_day　login
+    
+   でセッションを保存。
+   
+    $ green_day new <contest-name>
+    
+   でrspecを用いたテスト及びディレクトリを作成。
+   
+   
 
 ## Development
 
