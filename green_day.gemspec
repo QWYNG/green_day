@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata['source_code_uri'] = spec.homepage
 
   spec.add_dependency 'thor'
+  spec.add_dependency 'httpclient'
   spec.add_development_dependency 'aruba'
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 10.0'
