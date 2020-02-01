@@ -18,7 +18,8 @@ Gem::Specification.new do |spec|
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
 
-  spec.add_dependency 'httpclient'
+  spec.add_dependency 'faraday', '< 1.0'
+  spec.add_dependency 'faraday-cookie_jar'
   spec.add_dependency 'nokogiri'
   spec.add_dependency 'thor'
   spec.add_development_dependency 'aruba'
