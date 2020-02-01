@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
-require 'green_day/version'
+require_relative 'green_day/version'
+require_relative 'green_day/cli'
 
 module GreenDay
   class Error < StandardError; end
-  # Your code goes here...
+
+  Cli.start(ARGV)
 end
