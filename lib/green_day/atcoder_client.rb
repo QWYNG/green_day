@@ -8,6 +8,9 @@ require 'nokogiri'
 module GreenDay
   class AtcoderClient
     ATCODER_ENDPOINT = 'https://atcoder.jp'
+    INPUT_SAMPLE_INDEXES = [1, 3, 5].freeze
+    OUTPUT_SAMPLE_INDEXES = [2, 4, 6].freeze
+
     attr_accessor :client
 
     def initialize
@@ -16,6 +19,28 @@ module GreenDay
         builder.request :url_encoded
         builder.adapter :net_http
       end
+    end
+
+    def contest_exist?(contest_name)
+      res = client.get("contests/#{contest_name}")
+      res.status == 200
+    end
+
+    def fetch_task_codes(contest)
+      body = get_parsed_body("contests/#{contest.name}/tasks")
+
+      # 3問だったら<tbody>の中に<tr>が3 * 2個 </tbody> が1mh個
+      tasks_size = ((body.at('tbody').children.size - 1) / 2.0).ceil
+      ('A'..'Z').to_a.shift(tasks_size)
+    end
+
+    def fetch_inputs_and_outputs(contest, task)
+      path = "contests/#{contest.name}/tasks/#{contest.name}_#{task.code.downcase}"
+      body = get_parsed_body(path)
+      samples = body.css('section > pre').map { |e| e.children.text }
+
+      [INPUT_SAMPLE_INDEXES.map { |i| samples[i] },
+       OUTPUT_SAMPLE_INDEXES.map { |i| samples[i] }]
     end
 
     def login(username, password)
@@ -57,6 +82,11 @@ module GreenDay
 
     def store_cookie(cookie)
       IO.write('cookie-data', cookie.to_s)
+    end
+
+    def get_parsed_body(path)
+      res = client.get(path)
+      Nokogiri::HTML.parse(res.body)
     end
   end
 end
