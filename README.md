@@ -1,8 +1,5 @@
 # GreenDay
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/green_day`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Automatically create workspace and tests for Atcoder contests
 
 ## Installation
 
@@ -21,16 +18,58 @@ Or install it yourself as:
     $ gem install green_day
 
 ## Usage
-
-    $ green_day　login
+   
+    $ bundle exec green_day new <contest-name>
     
-   でセッションを保存。
+   This command creates directory and spec.
    
-    $ green_day new <contest-name>
+   For example 
+   
+    $ bundle exec green_day new abc150
+   
+   ```
+    abc150
+    ├── A.rb
+    ├── B.rb
+    ├── C.rb
+    ├── D.rb
+    ├── E.rb
+    ├── F.rb
+    └── spec
+        ├── A_spec.rb
+        ├── B_spec.rb
+        ├── C_spec.rb
+        ├── D_spec.rb
+        ├── E_spec.rb
+        └── F_spec.rb
+   ```
+   
+   Example of output spec
+   
+   ```ruby
+    require 'rspec'
     
-   でrspecを用いたテスト及びディレクトリを作成。
-   
-   
+    RSpec.describe 'test' do
+      it 'test with "2 900\n"' do
+        io = IO.popen("ruby abc150/A.rb", "w+")
+        io.puts("2 900\n")
+        expect(io.gets).to eq("Yes\n")
+      end
+    
+      it 'test with "1 501\n"' do
+        io = IO.popen("ruby abc150/A.rb", "w+")
+        io.puts("1 501\n")
+        expect(io.gets).to eq("No\n")
+      end
+    
+      it 'test with "4 2000\n"' do
+        io = IO.popen("ruby abc150/A.rb", "w+")
+        io.puts("4 2000\n")
+        expect(io.gets).to eq("Yes\n")
+      end
+    
+    end
+  ```
 
 ## Development
 
@@ -40,7 +79,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/green_day. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/QWYNG/green_day. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
