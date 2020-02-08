@@ -8,9 +8,6 @@ require 'nokogiri'
 module GreenDay
   class AtcoderClient
     ATCODER_ENDPOINT = 'https://atcoder.jp'
-    INPUT_SAMPLE_INDEXES = [1, 3, 5].freeze
-    OUTPUT_SAMPLE_INDEXES = [2, 4, 6].freeze
-
     attr_accessor :client
 
     def initialize
@@ -37,10 +34,19 @@ module GreenDay
     def fetch_inputs_and_outputs(contest, task)
       path = "contests/#{contest.name}/tasks/#{contest.name}_#{task.code.downcase}"
       body = get_parsed_body(path)
-      samples = body.css('section > pre').map { |e| e.children.text }
+      samples = body.css('.lang-ja > .part > section > pre').map { |e| e.children.text }
 
-      [INPUT_SAMPLE_INDEXES.map { |i| samples[i] },
-       OUTPUT_SAMPLE_INDEXES.map { |i| samples[i] }]
+      imputes = []
+      outputs = []
+      samples.each_with_index do |sample, i|
+        if i.even?
+          imputes << sample
+        else
+          outputs << sample
+        end
+      end
+
+      [imputes, outputs]
     end
 
     def login(username, password)

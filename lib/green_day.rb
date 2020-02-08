@@ -6,5 +6,4 @@ require_relative 'green_day/cli'
 module GreenDay
   class Error < StandardError; end
 
-  Cli.start(ARGV)
 end

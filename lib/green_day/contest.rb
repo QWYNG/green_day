@@ -9,7 +9,7 @@ module GreenDay
 
     def initialize(contest_name)
       client = AtcoderClient.new
-      raise Error 'cant find contest' unless client.contest_exist?(contest_name)
+      raise GreenDay::Error 'cant find contest' unless client.contest_exist?(contest_name)
 
       @name = contest_name
       @tasks = client.fetch_task_codes(self).map do |task_code|

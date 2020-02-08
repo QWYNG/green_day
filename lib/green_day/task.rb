@@ -2,7 +2,7 @@
 
 module GreenDay
   class Task
-    attr_reader :contest, :code
+    attr_reader :contest, :code, :input_output_hash
     def initialize(contest, code)
       @contest = contest
       @code = code
