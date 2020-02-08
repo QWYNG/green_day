@@ -8,11 +8,13 @@ require 'nokogiri'
 module GreenDay
   class AtcoderClient
     ATCODER_ENDPOINT = 'https://atcoder.jp'
-    attr_accessor :client
+    COOKIE_DB = 'cookie-store'
+    attr_accessor :client, :cookie_jar
 
     def initialize
+      @cookie_jar = create_or_load_cookie_jar
       @client = Faraday.new(url: ATCODER_ENDPOINT) do |builder|
-        builder.use :cookie_jar
+        builder.use :cookie_jar, jar: cookie_jar
         builder.request :url_encoded
         builder.adapter :net_http
       end
@@ -52,46 +54,47 @@ module GreenDay
     def login(username, password)
       csrf_token = obtain_atcoder_csrf_token
 
-      res = client.post('/login',
-                        username: username,
-                        password: password,
-                        csrf_token: csrf_token)
+      client.post('/login',
+                  username: username,
+                  password: password,
+                  csrf_token: csrf_token)
 
-      flash_cookie, session_cookie = cookies(res)
-
-      unless login_succeed?(flash_cookie)
+      unless login_succeed?
         # TODO: TBD
-        raise Error, CGI.unescape(flash_cookie.value)
+        raise Error, CGI.unescape(select_flash_cookie.value)
       end
 
-      store_cookie(session_cookie)
+      cookie_jar.save(COOKIE_DB)
     end
 
-
     private
+
+    def create_or_load_cookie_jar
+      jar = HTTP::CookieJar.new
+      jar.load(COOKIE_DB) if File.exist?(COOKIE_DB)
+      jar
+    end
 
     def obtain_atcoder_csrf_token
       get_login_responce = client.get('/login')
       login_html = Nokogiri::HTML.parse(get_login_responce.body)
       login_html.at('input[name="csrf_token"]')['value']
-    rescue _
+    rescue StandardError
       raise Error, 'cant get_csrf_token'
     end
 
-    def login_succeed?(flash_cookie)
+    def login_succeed?
+      flash_cookie = select_flash_cookie
       flash_cookie.value.include?('Welcome')
     end
 
-    def cookies(res)
-      WEBrick::Cookie.parse_set_cookies(res.headers['set-cookie'])
-    end
-
-    def store_cookie(cookie)
-      IO.write('cookie-data', cookie.to_s)
+    def select_flash_cookie
+      cookie_jar.store.instance_variable_get(:@jar)['atcoder.jp']['/']['REVEL_FLASH']
     end
 
     def get_parsed_body(path)
       res = client.get(path)
+      @cookie_jar.save(COOKIE_DB)
       Nokogiri::HTML.parse(res.body)
     end
   end
