@@ -6,6 +6,8 @@ require 'green_day/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'green_day'
+  spec.bindir        = 'exe'
+  spec.executables   = ['green_day']
   spec.version       = GreenDay::VERSION
   spec.authors       = ['qwyng']
   spec.email         = ['ikusawasi@gmail.com']
