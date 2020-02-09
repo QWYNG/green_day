@@ -25,7 +25,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'nokogiri'
   spec.add_dependency 'rspec', '~> 3.0'
   spec.add_dependency 'thor'
-  spec.add_development_dependency 'aruba'
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'dotenv'
   spec.add_development_dependency 'rake', '~> 10.0'
