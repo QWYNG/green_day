@@ -66,4 +66,40 @@ RSpec.describe GreenDay::Cli do
       )
     end
   end
+
+  describe 'login' do
+    subject { cli.login }
+
+    before :example do
+      allow(STDIN).to receive(:gets) do
+        inputs.shift + "\n"
+      end
+    end
+
+    after :example do
+      FileUtils.remove('cookie-store', force: true)
+    end
+
+    context 'valid name and password' do
+      let(:inputs) { [ENV['USER_NAME'], ENV['PASSWORD']] }
+
+      it 'puts username: password:' do
+        expect { subject }.to output("username:\npassword:\n").to_stdout
+      end
+
+      it 'create cookie-store' do
+        subject
+
+        expect(File.exist?('cookie-store')).to be_truthy
+      end
+    end
+
+    context 'invalid name and password' do
+      let(:inputs) { %w[invalid_name invalid_password] }
+
+      it 'raise error' do
+        expect{ subject }.to raise_error(GreenDay::Error)
+      end
+    end
+  end
 end
