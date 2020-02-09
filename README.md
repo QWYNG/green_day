@@ -18,12 +18,15 @@ Or install it yourself as:
     $ gem install green_day
 
 ## Usage
+login(this command stores your cookie as `cookie-store` in current dir)
+
+    $ bundle exec green_day login
+    
+And create directory and spec as below.
    
     $ bundle exec green_day new <contest-name>
-    
-   This command creates directory and spec.
-   
-   For example 
+
+For example 
    
     $ bundle exec green_day new abc150
    
