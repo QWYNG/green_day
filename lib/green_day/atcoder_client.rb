@@ -94,7 +94,6 @@ module GreenDay
 
     def get_parsed_body(path)
       res = client.get(path)
-      @cookie_jar.save(COOKIE_DB)
       Nokogiri::HTML.parse(res.body)
     end
   end
