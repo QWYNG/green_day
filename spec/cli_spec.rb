@@ -84,7 +84,7 @@ RSpec.describe GreenDay::Cli do
       let(:inputs) { [ENV['USER_NAME'], ENV['PASSWORD']] }
 
       it 'puts username: password:' do
-        expect { subject }.to output("username:\npassword:\n").to_stdout
+        expect { subject }.to output('username:password:').to_stdout
       end
 
       it 'create cookie-store' do

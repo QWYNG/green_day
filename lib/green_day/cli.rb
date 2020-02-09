@@ -9,9 +9,9 @@ module GreenDay
   class Cli < Thor
     desc 'login Atcoder', 'login Atcoder and save session'
     def login
-      puts 'username:'
+      print 'username:'
       username = STDIN.gets.chomp
-      puts 'password:'
+      print 'password:'
       password = STDIN.gets.chomp
 
       AtcoderClient.new.login(username, password)
