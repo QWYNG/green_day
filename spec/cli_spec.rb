@@ -98,7 +98,7 @@ RSpec.describe GreenDay::Cli do
       let(:inputs) { %w[invalid_name invalid_password] }
 
       it 'raise error' do
-        expect{ subject }.to raise_error(GreenDay::Error)
+        expect { subject }.to raise_error(GreenDay::Error)
       end
     end
   end

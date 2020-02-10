@@ -38,17 +38,9 @@ module GreenDay
       body = get_parsed_body(path)
       samples = body.css('.lang-ja > .part > section > pre').map { |e| e.children.text }
 
-      imputes = []
-      outputs = []
-      samples.each_with_index do |sample, i|
-        if i.even?
-          imputes << sample
-        else
-          outputs << sample
-        end
-      end
+      inputs, outputs = samples.partition.with_index { |_e, i| i.even? }
 
-      [imputes, outputs]
+      [inputs, outputs]
     end
 
     def login(username, password)
