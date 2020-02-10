@@ -9,7 +9,7 @@ module GreenDay
   class AtcoderClient
     ATCODER_ENDPOINT = 'https://atcoder.jp'
     COOKIE_DB = 'cookie-store'
-    attr_accessor :client, :cookie_jar
+    attr_reader :client, :cookie_jar
 
     def initialize
       @cookie_jar = create_or_load_cookie_jar
@@ -34,11 +34,12 @@ module GreenDay
     end
 
     def fetch_inputs_and_outputs(contest, task)
-      path = "contests/#{contest.name}/tasks/#{contest.name}_#{task.code.downcase}"
+      contest_name = contest.name
+      path = "contests/#{contest_name}/tasks/#{contest_name}_#{task.code.downcase}"
       body = get_parsed_body(path)
       samples = body.css('.lang-ja > .part > section > pre').map { |e| e.children.text }
 
-      inputs, outputs = samples.partition.with_index { |_e, i| i.even? }
+      inputs, outputs = samples.partition.with_index { |_sample, i| i.even? }
 
       [inputs, outputs]
     end
@@ -68,8 +69,8 @@ module GreenDay
     end
 
     def obtain_atcoder_csrf_token
-      get_login_responce = client.get('/login')
-      login_html = Nokogiri::HTML.parse(get_login_responce.body)
+      get_login_response = client.get('/login')
+      login_html = Nokogiri::HTML.parse(get_login_response.body)
       login_html.at('input[name="csrf_token"]')['value']
     rescue StandardError
       raise Error, 'cant get_csrf_token'
