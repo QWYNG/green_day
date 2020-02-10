@@ -20,14 +20,14 @@ module GreenDay
     desc 'new [contest name]', 'create contest workspace and spec'
     def new(contest_name)
       contest = Contest.new(contest_name)
-
-      Dir.mkdir(contest_name)
-      Dir.mkdir("#{contest_name}/spec")
+      FileUtils.makedirs("#{contest_name}/spec")
 
       contest.tasks.each do |task|
-        answer = File.open("#{contest_name}/#{task.code}.rb", 'w')
+        task_code = task.code
+        answer = File.open("#{contest_name}/#{task_code}.rb", 'w')
         test = TestBuilder.build_test(answer, task.input_output_hash)
-        File.open("#{contest.name}/spec/#{task.code}_spec.rb", 'w') do |f|
+
+        File.open("#{contest.name}/spec/#{task_code}_spec.rb", 'w') do |f|
           f.write(test)
         end
       end

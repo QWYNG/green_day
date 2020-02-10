@@ -17,9 +17,9 @@ module GreenDay
     def build_example(answer, input, output)
       <<~SPEC
         #{tab}it 'test with #{unify_cr_lf(input)}' do
-        #{tab}  io = IO.popen("ruby #{answer.path}", "w+")
-        #{tab}  io.puts(#{unify_cr_lf(input)})
-        #{tab}  expect(io.gets).to eq(#{unify_cr_lf(output)})
+        #{tab}#{tab}io = IO.popen("ruby #{answer.path}", "w+")
+        #{tab}#{tab}io.puts(#{unify_cr_lf(input)})
+        #{tab}#{tab}expect(io.gets).to eq(#{unify_cr_lf(output)})
         #{tab}end
       SPEC
     end
