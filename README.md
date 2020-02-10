@@ -18,11 +18,13 @@ Or install it yourself as:
     $ gem install green_day
 
 ## Usage
-login(this command stores your cookie as `cookie-store` in current dir)
+login(this command stores your cookie as `cookie-store` in current directory)
 
     $ bundle exec green_day login
     
-And create directory and spec as below.
+If you want to delete session, remove `cookie-store`
+    
+This command creates directory and spec.
    
     $ bundle exec green_day new <contest-name>
 
@@ -81,7 +83,8 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
-
+You need create `.env` and set `USER_NAME` and `PASSWORD` for spec. see `env.sample`  
+Those env is already set as secret on CI.  
 Bug reports and pull requests are welcome on GitHub at https://github.com/QWYNG/green_day. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
