@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'thor'
+require 'io/console'
 require_relative 'atcoder_client'
 require_relative 'contest'
 require_relative 'test_builder'
@@ -12,7 +13,7 @@ module GreenDay
       print 'username:'
       username = STDIN.gets.chomp
       print 'password:'
-      password = STDIN.gets.chomp
+      password = STDIN.noecho(&:gets).chomp
 
       AtcoderClient.new.login(username, password)
     end

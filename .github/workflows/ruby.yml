@@ -55,7 +55,6 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
           RBENV_VERSION: ${{ matrix.ruby }}
         run: |
-          set -xe
           eval "$(rbenv init -)"
           bundle install --jobs 4 --retry 3
           bundle exec rake
