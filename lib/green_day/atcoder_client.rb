@@ -53,8 +53,8 @@ module GreenDay
                   csrf_token: csrf_token)
 
       unless login_succeed?
-        # TODO: TBD
-        raise Error, CGI.unescape(select_flash_cookie.value)
+        ## ex error:Username or Password is incorrect
+        raise Error, CGI.unescape(select_flash_cookie.value).split('.').shift
       end
 
       cookie_jar.save(COOKIE_DB)
