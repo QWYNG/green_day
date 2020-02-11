@@ -74,6 +74,9 @@ RSpec.describe GreenDay::Cli do
       allow(STDIN).to receive(:gets) do
         inputs.shift + "\n"
       end
+      allow(STDIN).to receive(:getpass).with('password:') do
+        inputs.shift + "\n"
+      end
     end
 
     after :example do
@@ -82,10 +85,6 @@ RSpec.describe GreenDay::Cli do
 
     context 'valid name and password' do
       let(:inputs) { [ENV['USER_NAME'], ENV['PASSWORD']] }
-
-      it 'puts username: password:' do
-        expect { subject }.to output('username:password:').to_stdout
-      end
 
       it 'create cookie-store' do
         subject

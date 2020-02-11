@@ -11,9 +11,8 @@ module GreenDay
     desc 'login Atcoder', 'login Atcoder and save session'
     def login
       print 'username:'
-      username = STDIN.gets.chomp
-      print 'password:'
-      password = STDIN.noecho(&:gets).chomp
+      username = STDIN.gets.chomp!
+      password = STDIN.getpass('password:').chomp!
 
       AtcoderClient.new.login(username, password)
     end
