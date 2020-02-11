@@ -1,6 +1,6 @@
 # GreenDay
-Automatically create workspace and tests for Atcoder contests
-
+Automatically create workspace and tests for Atcoder contests  
+（日本語で解説した記事は[こちら](https://qiita.com/QWYNG/items/0e2e6b72bd1969d0d751))
 ## Installation
 
 Add this line to your application's Gemfile:
