@@ -19,7 +19,8 @@ module GreenDay
         #{tab}it 'test with #{unify_cr_lf(input)}' do
         #{tab}#{tab}io = IO.popen("ruby #{answer.path}", "w+")
         #{tab}#{tab}io.puts(#{unify_cr_lf(input)})
-        #{tab}#{tab}expect(io.gets).to eq(#{unify_cr_lf(output)})
+        #{tab}#{tab}io.close_write
+        #{tab}#{tab}expect(io.readlines.join).to eq(#{unify_cr_lf(output)})
         #{tab}end
       SPEC
     end
