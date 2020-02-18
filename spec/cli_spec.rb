@@ -77,9 +77,6 @@ RSpec.describe GreenDay::Cli do
       allow(STDIN).to receive(:gets) do
         inputs.shift + "\n"
       end
-      allow(STDIN).to receive(:getpass).with('password:') do
-        inputs.shift + "\n"
-      end
     end
 
     after :example do

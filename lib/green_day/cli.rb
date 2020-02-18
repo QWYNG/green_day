@@ -12,7 +12,8 @@ module GreenDay
     def login
       print 'username:'
       username = STDIN.gets.chomp!
-      password = STDIN.getpass('password:').chomp!
+      print 'password:'
+      password = STDIN.gets.chomp!
 
       AtcoderClient.new.login(username, password)
     end
