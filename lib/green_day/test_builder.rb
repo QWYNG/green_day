@@ -26,7 +26,9 @@ module GreenDay
     end
 
     def unify_cr_lf(string)
-      string.gsub(/\R/, "\n").dump
+      return unless string # たまに画像で例を出してくるとsampleの文字がなくなる
+
+      string&.gsub(/\R/, "\n")&.dump
     end
 
     def tab
