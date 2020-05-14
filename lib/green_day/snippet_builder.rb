@@ -7,8 +7,29 @@ module SnippetBuilder
   module_function
 
   def build
-    [ARRAY_INPUT_SNIPPET, MULTIPLE_LINE_INPUT_SNIPPET]
-      .map { |snippet| '# ' + snippet }
-      .join("\n") + "\n"
+    create_snippet_file unless File.exist?('.snippet')
+    read_snippet_file
   end
+
+  def create_snippet_file
+    file = File.open('.snippet', 'w')
+    constants
+      .map { |snippet| file.puts('# ' + eval(snippet.to_s)) }
+    file.close
+
+    # \e[32m green color
+    puts "    \e[32mcreate\e[0m #{FileUtils.pwd}/.snippet"
+
+    File.exist?('.snippet') ? true : false
+  end
+
+  def read_snippet_file
+    file = File.open('.snippet', 'r')
+    snippet = file.read || ''
+    file.close
+
+    snippet
+  end
+
+  private_class_method :create_snippet_file, :read_snippet_file
 end

@@ -5,6 +5,12 @@ require 'spec_helper'
 RSpec.describe GreenDay::Cli do
   let!(:cli) { described_class.new }
 
+  RSpec.configure do |config|
+    config.after(:suite) do
+      FileUtils.remove_entry_secure('.snippet')
+    end
+  end
+
   describe 'new [contest name]' do
     # https://atcoder.jp/contests/abc150
     subject { cli.new('abc150') }
