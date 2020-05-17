@@ -12,11 +12,8 @@ jobs:
 
       matrix:
         ruby:
-          - 2.3.3
           - 2.7.0
         include:
-          - ruby: 2.3.3
-            runner: ubuntu-16.04
           - ruby: 2.7.0
             runner: ubuntu-latest
 
