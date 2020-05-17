@@ -37,6 +37,15 @@ RSpec.describe GreenDay::Cli do
       expect(File.exist?('abc150/spec/F_spec.rb')).to be_truthy
     end
 
+    it 'write snippet code' do
+      expect(File.read('abc150/A.rb')).to eq(
+        <<~SNIPPET
+          # n = gets.split.map(&:to_i)
+          # array = readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
+        SNIPPET
+      )
+    end
+
     it 'write spec code' do
       expect(File.read('abc150/spec/A_spec.rb')).to eq(
         <<~SPEC

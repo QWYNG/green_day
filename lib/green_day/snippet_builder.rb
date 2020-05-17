@@ -7,8 +7,8 @@ module SnippetBuilder
   module_function
 
   def build
-    constants
-      .map { |snippet| '# ' + eval(snippet.to_s) }
+    [ARRAY_INPUT_SNIPPET, MULTIPLE_LINE_INPUT_SNIPPET]
+      .map { |snippet| '# ' + snippet }
       .join("\n") + "\n"
   end
 end
