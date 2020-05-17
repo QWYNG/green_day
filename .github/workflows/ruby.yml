@@ -12,12 +12,9 @@ jobs:
 
       matrix:
         ruby:
-          - 2.3.3
-          - 2.7.0
+          - 2.7.1
         include:
-          - ruby: 2.3.3
-            runner: ubuntu-16.04
-          - ruby: 2.7.0
+          - ruby: 2.7.1
             runner: ubuntu-latest
 
     steps:
