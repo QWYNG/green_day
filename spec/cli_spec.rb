@@ -110,4 +110,29 @@ RSpec.describe GreenDay::Cli do
       end
     end
   end
+
+  describe 'rspec [contest name] [task code]' do
+    subject { cli.rspec('abc150', 'A') }
+    before do
+      allow(RSpec::Core::Runner).to receive(:run)
+    end
+
+    it 'exec rspec command' do
+      subject
+      expect(RSpec::Core::Runner).to \
+        have_received(:run).with(['abc150/spec/A_spec.rb']).once
+    end
+
+    it 'replace the contest name with lowercase' do
+      cli.rspec('ABC150', 'A')
+      expect(RSpec::Core::Runner).to \
+        have_received(:run).with(['abc150/spec/A_spec.rb']).once
+    end
+
+    it 'replace the task code with uppercase' do
+      cli.rspec('abc150', 'a')
+      expect(RSpec::Core::Runner).to \
+        have_received(:run).with(['abc150/spec/A_spec.rb']).once
+    end
+  end
 end
