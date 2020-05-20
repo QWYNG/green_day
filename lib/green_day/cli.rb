@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'thor'
+require 'rspec'
 require_relative 'atcoder_client'
 require_relative 'contest'
 require_relative 'test_builder'
@@ -29,6 +30,12 @@ module GreenDay
         create_submit_file!(contest_name, task_code)
         create_spec_file!(contest_name, task_code, task.input_output_hash)
       end
+    end
+
+    desc 'rspec [contest name] [task code]', 'exec rspec with contest test case'
+    def rspec(contest_name, task_code)
+      file_path = spec_file_path(contest_name.downcase, task_code.upcase)
+      RSpec::Core::Runner.run([file_path])
     end
 
     private
