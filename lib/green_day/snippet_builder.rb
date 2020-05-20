@@ -13,8 +13,8 @@ module SnippetBuilder
 
   def create_snippet_file
     file = File.open('.snippet', 'w')
-    constants
-      .map { |snippet| file.puts('# ' + eval(snippet.to_s)) }
+    [ARRAY_INPUT_SNIPPET, MULTIPLE_LINE_INPUT_SNIPPET]
+      .map { |snippet| file.puts("# #{snippet}") }
     file.close
 
     # \e[32m green color
