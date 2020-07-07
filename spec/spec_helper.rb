@@ -3,6 +3,13 @@
 require 'bundler/setup'
 require 'green_day'
 require 'dotenv/load'
+require 'simplecov'
+SimpleCov.start
+
+if ENV['CI'] == 'true'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
