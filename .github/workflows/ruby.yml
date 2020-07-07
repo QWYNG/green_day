@@ -1,58 +1,31 @@
 name: Ruby
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches: [ master ]
 
 jobs:
   build:
 
-    runs-on: ${{ matrix.runner }}
+    runs-on: ubuntu-latest
 
     strategy:
-      fail-fast: false
-
       matrix:
         ruby:
           - 2.7.1
-        include:
-          - ruby: 2.7.1
-            runner: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Set up rbenv
-        uses: masa-iwasaki/setup-rbenv@1.1.0
-
-      - name: Cache RBENV_ROOT
-        uses: actions/cache@v1
-        id: cache_rbenv
+      - name: Set up Ruby ${{ matrix.ruby }}
+        uses: actions/setup-ruby@v1
         with:
-          path: ~/.rbenv/versions
-          key: v1-rbenv-${{ runner.os }}-${{ matrix.ruby }}
-
-      - name: Reinstall libssl-dev
-        run: |
-          set -xe
-          sudo apt-get remove -y libssl-dev
-          sudo apt-get install -y libssl-dev=1.0.2g-1ubuntu4.15
-        if: matrix.runner == 'ubuntu-16.04'
-
-      - name: Install Ruby
-        env:
-          RBENV_VERSION: ${{ matrix.ruby }}
-        run: |
-          set -xe
-          eval "$(rbenv init -)"
-          rbenv install -s $RBENV_VERSION
-          gem install bundler || true
-
-      - name: test with Rake
+          ruby-version: ${{ matrix.ruby }}
+      - name: Test with rake
         env:
           USER_NAME: ${{ secrets.USER_NAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-          RBENV_VERSION: ${{ matrix.ruby }}
         run: |
-          eval "$(rbenv init -)"
           bundle install --jobs 4 --retry 3
           bundle exec rake
