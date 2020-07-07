@@ -40,8 +40,8 @@ RSpec.describe GreenDay::Cli do
     it 'write snippet code' do
       expect(File.read('abc150/A.rb')).to eq(
         <<~SNIPPET
-          # n = gets.split.map(&:to_i)
-          # array = readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
+          # gets.split.map(&:to_i)
+          # readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
         SNIPPET
       )
     end
