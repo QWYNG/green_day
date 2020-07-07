@@ -10,4 +10,4 @@ Layout/LineLength:
 Metrics/BlockLength:
   Exclude:
   - 'spec/*'
-
+  - 'green_day.gemspec'
