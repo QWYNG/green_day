@@ -24,42 +24,36 @@ module GreenDay
       FileUtils.makedirs("#{contest_name}/spec")
 
       contest.tasks.each do |task|
-        task_code = task.code
-
-        create_submit_file!(contest_name, task_code)
-        create_spec_file!(contest_name, task_code, task.input_output_hash)
+        create_submit_file!(contest_name, task)
+        create_spec_file!(contest_name, task)
       end
     end
 
     private
 
-    def create_submit_file!(contest_name, task_code)
-      File.open(submit_file_path(contest_name, task_code), 'w') do |f|
+    def create_submit_file!(contest_name, task)
+      File.open(submit_file_path(contest_name, task), 'w') do |f|
         f.write(SnippetBuilder.build)
       end
-
-      true
     end
 
-    def create_spec_file!(contest_name, task_code, input_output_hash)
+    def create_spec_file!(contest_name, task)
       test =
         TestBuilder.build_test(
-          submit_file_path(contest_name, task_code),
-          input_output_hash
+          submit_file_path(contest_name, task),
+          task.input_output_hash
         )
-      File.open(spec_file_path(contest_name, task_code), 'w') do |f|
+      File.open(spec_file_path(contest_name, task), 'w') do |f|
         f.write(test)
       end
-
-      true
     end
 
-    def submit_file_path(contest_name, task_code)
-      "#{contest_name}/#{task_code}.rb"
+    def submit_file_path(contest_name, task)
+      "#{contest_name}/#{task.code}.rb"
     end
 
-    def spec_file_path(contest_name, task_code)
-      "#{contest_name}/spec/#{task_code}_spec.rb"
+    def spec_file_path(contest_name, task)
+      "#{contest_name}/spec/#{task.code}_spec.rb"
     end
   end
 end
