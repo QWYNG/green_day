@@ -8,7 +8,7 @@ require 'nokogiri'
 module GreenDay
   class AtcoderClient
     ATCODER_ENDPOINT = 'https://atcoder.jp'
-    COOKIE_DB = 'cookie-store'
+    COOKIE_FILE_NAME = '.cookie-store'
     attr_reader :client, :cookie_jar
 
     def initialize
@@ -57,14 +57,14 @@ module GreenDay
         raise Error, CGI.unescape(select_flash_cookie.value).split('.').shift
       end
 
-      cookie_jar.save(COOKIE_DB)
+      cookie_jar.save(COOKIE_FILE_NAME)
     end
 
     private
 
     def create_or_load_cookie_jar
       jar = HTTP::CookieJar.new
-      jar.load(COOKIE_DB) if File.exist?(COOKIE_DB)
+      jar.load(COOKIE_FILE_NAME) if File.exist?(COOKIE_FILE_NAME)
       jar
     end
 
