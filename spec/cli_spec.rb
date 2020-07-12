@@ -100,7 +100,7 @@ RSpec.describe GreenDay::Cli do
       it 'create cookie-store' do
         subject
 
-        expect(File.exist?('cookie-store')).to be_truthy
+        expect(File.exist?('.cookie-store')).to be_truthy
       end
     end
 

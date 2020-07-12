@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'thor'
+require 'parallel'
+require 'colorize'
 require_relative 'atcoder_client'
 require_relative 'contest'
 require_relative 'test_builder'
@@ -16,17 +18,23 @@ module GreenDay
       password = STDIN.gets.chomp!
 
       AtcoderClient.new.login(username, password)
+      puts(
+        "Successfully created cookie-store #{AtcoderClient::COOKIE_FILE_NAME}"
+        .colorize(:green)
+      )
     end
 
     desc 'new [contest name]', 'create contest workspace and spec'
     def new(contest_name)
-      contest = Contest.new(contest_name)
+      contest = Contest.new(contest_name, AtcoderClient.new)
       FileUtils.makedirs("#{contest_name}/spec")
 
-      contest.tasks.each do |task|
+      Parallel.each(contest.tasks) do |task|
         create_submit_file!(contest_name, task)
         create_spec_file!(contest_name, task)
       end
+
+      puts "Successfully created #{contest_name} directory".colorize(:green)
     end
 
     private

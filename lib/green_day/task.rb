@@ -3,17 +3,15 @@
 module GreenDay
   class Task
     attr_reader :contest, :code, :input_output_hash
-    def initialize(contest, code)
+    def initialize(contest, code, client)
       @contest = contest
       @code = code
-      @input_output_hash = create_input_output_hash
+      @input_output_hash = create_input_output_hash(client)
     end
 
     private
 
-    def create_input_output_hash
-      client = AtcoderClient.new
-
+    def create_input_output_hash(client)
       input_samples, output_samples =
         client.fetch_inputs_and_outputs(contest, self)
 

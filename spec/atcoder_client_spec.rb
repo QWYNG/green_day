@@ -8,7 +8,7 @@ RSpec.describe GreenDay::AtcoderClient do
 
     context 'with cookie-store' do
       before :example do
-        File.open('cookie-store', 'w') do |f|
+        File.open('.cookie-store', 'w') do |f|
           f.write(
             <<~SESSION
               ---
@@ -30,7 +30,7 @@ RSpec.describe GreenDay::AtcoderClient do
       end
 
       after :example do
-        File.delete('cookie-store')
+        File.delete('.cookie-store')
       end
 
       it 'initialize with cookie' do

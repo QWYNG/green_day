@@ -18,11 +18,11 @@ Or install it yourself as:
     $ gem install green_day
 
 ## Usage
-login(this command stores your cookie as `cookie-store` in current directory)
+login(this command stores your cookie as `.cookie-store` in current directory)
 
     $ bundle exec green_day login
     
-If you want to delete session, remove `cookie-store`
+If you want to delete session, remove `.cookie-store`
     
 This command creates directory and spec.
    
