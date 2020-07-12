@@ -3,6 +3,7 @@
 require 'thor'
 require 'parallel'
 require 'colorize'
+require 'io/console'
 require_relative 'atcoder_client'
 require_relative 'contest'
 require_relative 'test_builder'
@@ -13,13 +14,13 @@ module GreenDay
     desc 'login Atcoder', 'login Atcoder and save session'
     def login
       print 'username:'
-      username = STDIN.gets.chomp!
+      username = STDIN.gets(chomp: true)
       print 'password:'
-      password = STDIN.gets.chomp!
+      password = STDIN.noecho { |stdin| stdin.gets(chomp: true) }.tap { puts }
 
       AtcoderClient.new.login(username, password)
       puts(
-        "Successfully created cookie-store #{AtcoderClient::COOKIE_FILE_NAME}"
+        "Successfully created #{AtcoderClient::COOKIE_FILE_NAME}"
         .colorize(:green)
       )
     end
