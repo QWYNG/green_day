@@ -86,7 +86,7 @@ RSpec.describe GreenDay::Cli do
     # see env.sample
     before :example do
       allow(STDIN).to receive(:gets) do
-        inputs.shift + "\n"
+        inputs.shift
       end
     end
 
