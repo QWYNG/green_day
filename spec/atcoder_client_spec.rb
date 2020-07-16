@@ -36,6 +36,25 @@ RSpec.describe GreenDay::AtcoderClient do
       it 'initialize with cookie' do
         expect(subject.cookie_jar.store.instance_variable_get(:@jar)).not_to be_empty
       end
+
+      context 'with cookie-store ## old file name' do
+        before do
+          File.rename('.cookie-store', 'cookie-store')
+        end
+
+        after :example do
+          File.rename('cookie-store', '.cookie-store')
+        end
+
+        it 'warn file rename' do
+          expect { subject }
+            .to output("cookie-store needs rename .cookie-store\n").to_stderr
+        end
+
+        it 'initialize with cookie' do
+          expect(subject.cookie_jar.store.instance_variable_get(:@jar)).not_to be_empty
+        end
+      end
     end
 
     context 'without cookie-store' do

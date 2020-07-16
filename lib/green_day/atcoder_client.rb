@@ -64,7 +64,13 @@ module GreenDay
 
     def create_or_load_cookie_jar
       jar = HTTP::CookieJar.new
-      jar.load(COOKIE_FILE_NAME) if File.exist?(COOKIE_FILE_NAME)
+      if File.exist?(COOKIE_FILE_NAME)
+        jar.load(COOKIE_FILE_NAME)
+      elsif File.exist?('cookie-store')
+        warn 'cookie-store needs rename .cookie-store'
+        jar.load('cookie-store')
+      end
+
       jar
     end
 
