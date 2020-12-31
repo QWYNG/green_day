@@ -49,8 +49,6 @@ RSpec.describe GreenDay::Cli do
     it 'write spec code' do
       expect(File.read('abc150/spec/A_spec.rb')).to eq(
         <<~SPEC
-          require 'rspec'
-
           RSpec.describe 'test' do
             it 'test with "2 900\\n"' do
               io = IO.popen("ruby abc150/A.rb", "w+")
@@ -91,7 +89,7 @@ RSpec.describe GreenDay::Cli do
     end
 
     after :example do
-      FileUtils.remove('cookie-store', force: true)
+      FileUtils.remove(GreenDay::AtcoderClient::COOKIE_FILE_NAME, force: true)
     end
 
     context 'valid name and password' do
