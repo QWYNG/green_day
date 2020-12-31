@@ -12,7 +12,7 @@ RSpec.describe GreenDay::TestBuilder do
     let(:output) { "Yes\n" }
 
     it {
-      is_expected.to eq(
+      expect(subject).to eq(
         <<~SPEC
           \s\sit 'test with "2 900\\n"' do
           \s\s\s\sio = IO.popen("ruby submit_file", "w+")
@@ -31,7 +31,7 @@ RSpec.describe GreenDay::TestBuilder do
     let(:input_output_hash) { { "2 900\n" => "Yes\n", "3 900\n" => "No\n" } }
 
     it {
-      is_expected.to eq(
+      expect(subject).to eq(
         <<~SPEC
           RSpec.describe 'test' do
           \s\sit 'test with "2 900\\n"' do

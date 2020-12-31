@@ -1,4 +1,9 @@
+require: 
+  - rubocop-rake
+  - rubocop-rspec
+
 AllCops:
+  NewCops: enable
   Exclude:
     - 'spec/spec_helper.rb'
 Style/Documentation:
@@ -9,5 +14,11 @@ Layout/LineLength:
   Max: 90
 Metrics/BlockLength:
   Exclude:
-  - 'spec/*'
+  - 'spec/*/**'
   - 'green_day.gemspec'
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/NestedGroups:
+  Max: 4
+RSpec/ExampleLength:
+  Enabled: false
