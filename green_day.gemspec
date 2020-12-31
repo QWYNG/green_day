@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'parallel'
   spec.add_dependency 'rspec', '~> 3.0'
   spec.add_dependency 'thor'
+  spec.add_dependency 'webrick'
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'codecov'
   spec.add_development_dependency 'dotenv'
