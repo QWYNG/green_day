@@ -47,7 +47,7 @@ module GreenDay
       test =
         TestBuilder.build_test(
           submit_file_path(task),
-          task.input_output_hash
+          task.sample_answers
         )
       File.open(spec_file_path(task), 'w') do |f|
         f.write(test)
