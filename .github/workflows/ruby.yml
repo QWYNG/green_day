@@ -28,7 +28,7 @@ jobs:
           USER_NAME: ${{ secrets.USER_NAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: rake spec
+        run: script -e -c "rake spec"
       
 
 
