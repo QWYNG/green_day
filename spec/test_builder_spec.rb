@@ -33,8 +33,6 @@ RSpec.describe GreenDay::TestBuilder do
     it {
       is_expected.to eq(
         <<~SPEC
-          require 'rspec'
-
           RSpec.describe 'test' do
           \s\sit 'test with "2 900\\n"' do
           \s\s\s\sio = IO.popen("ruby submit_file", "w+")
