@@ -85,7 +85,7 @@ RSpec.describe GreenDay::Cli do
     # need Atcoder password and username in .env
     # see env.sample
     before :example do
-      allow(STDIN).to receive(:gets) do
+      allow($stdin).to receive(:gets) do
         inputs.shift
       end
     end

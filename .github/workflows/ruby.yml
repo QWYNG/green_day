@@ -19,11 +19,16 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-      - name: Rspec with rake
+      - name: bundle install
+        run: bundle install
+      - name: Rubocop
+        run: bundle exec rubocop
+      - name: Rspec
         env:
           USER_NAME: ${{ secrets.USER_NAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          bundle install --jobs 4 --retry 3
-          script -e -c rake
+        run: rake spec
+      
+
+
