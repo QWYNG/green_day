@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe GreenDay:: TestBuilder do
+RSpec.describe GreenDay::TestBuilder do
   let(:submit_file_path) { 'submit_file' }
 
   describe '.build_example' do
