@@ -7,7 +7,6 @@ require 'io/console'
 require_relative 'atcoder_client'
 require_relative 'contest'
 require_relative 'test_builder'
-require_relative 'snippet_builder'
 
 module GreenDay
   class Cli < Thor
@@ -28,41 +27,39 @@ module GreenDay
     desc 'new [contest name]', 'create contest workspace and spec'
     def new(contest_name)
       contest = Contest.new(contest_name, AtcoderClient.new)
-      FileUtils.makedirs("#{contest_name}/spec")
+      FileUtils.makedirs("#{contest.name}/spec")
 
       Parallel.each(contest.tasks) do |task|
-        create_submit_file!(contest_name, task)
-        create_spec_file!(contest_name, task)
+        create_submit_file(task)
+        create_spec_file(task)
       end
 
-      puts "Successfully created #{contest_name} directory".colorize(:green)
+      puts "Successfully created #{contest.name} directory".colorize(:green)
     end
 
     private
 
-    def create_submit_file!(contest_name, task)
-      File.open(submit_file_path(contest_name, task), 'w') do |f|
-        f.write(SnippetBuilder.build)
-      end
+    def create_submit_file(task)
+      File.open(submit_file_path(task), 'w')
     end
 
-    def create_spec_file!(contest_name, task)
+    def create_spec_file(task)
       test =
         TestBuilder.build_test(
-          submit_file_path(contest_name, task),
+          submit_file_path(task),
           task.input_output_hash
         )
-      File.open(spec_file_path(contest_name, task), 'w') do |f|
+      File.open(spec_file_path(task), 'w') do |f|
         f.write(test)
       end
     end
 
-    def submit_file_path(contest_name, task)
-      "#{contest_name}/#{task.code}.rb"
+    def submit_file_path(task)
+      "#{task.contest.name}/#{task.code}.rb"
     end
 
-    def spec_file_path(contest_name, task)
-      "#{contest_name}/spec/#{task.code}_spec.rb"
+    def spec_file_path(task)
+      "#{task.contest.name}/spec/#{task.code}_spec.rb"
     end
   end
 end
