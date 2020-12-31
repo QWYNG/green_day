@@ -6,8 +6,8 @@ RSpec.describe GreenDay::AtcoderClient do
   describe 'new' do
     subject { described_class.new }
 
-    context 'with cookie-store' do
-      before :example do
+    context 'with .cookie-store' do
+      before do
         File.open('.cookie-store', 'w') do |f|
           f.write(
             <<~SESSION
@@ -29,11 +29,11 @@ RSpec.describe GreenDay::AtcoderClient do
         end
       end
 
-      after :example do
+      after do
         File.delete('.cookie-store')
       end
 
-      it 'initialize with cookie' do
+      it 'initializes with cookie' do
         expect(subject.cookie_jar.store.instance_variable_get(:@jar)).not_to be_empty
       end
 
@@ -42,23 +42,23 @@ RSpec.describe GreenDay::AtcoderClient do
           File.rename('.cookie-store', 'cookie-store')
         end
 
-        after :example do
+        after do
           File.rename('cookie-store', '.cookie-store')
         end
 
-        it 'warn file rename' do
+        it 'warns file rename' do
           expect { subject }
             .to output("cookie-store needs rename .cookie-store\n").to_stderr
         end
 
-        it 'initialize with cookie' do
+        it 'initializes with cookie' do
           expect(subject.cookie_jar.store.instance_variable_get(:@jar)).not_to be_empty
         end
       end
     end
 
     context 'without cookie-store' do
-      it 'initialize without cookie' do
+      it 'initializes without cookie' do
         expect(subject.cookie_jar.store.instance_variable_get(:@jar)).to be_empty
       end
     end

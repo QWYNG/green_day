@@ -9,44 +9,37 @@ RSpec.describe GreenDay::Cli do
     # https://atcoder.jp/contests/abc150
     subject { cli.new('abc150') }
 
-    before :example do
+    before do
       subject
     end
 
-    after :example do
+    after do
       FileUtils.remove_entry_secure('abc150')
     end
 
-    it 'create contest name dir and file for submit' do
-      expect(File.exist?('abc150')).to be_truthy
-      expect(File.exist?('abc150/A.rb')).to be_truthy
-      expect(File.exist?('abc150/B.rb')).to be_truthy
-      expect(File.exist?('abc150/C.rb')).to be_truthy
-      expect(File.exist?('abc150/D.rb')).to be_truthy
-      expect(File.exist?('abc150/E.rb')).to be_truthy
-      expect(File.exist?('abc150/F.rb')).to be_truthy
+    it 'creates contest name dir and file for submit' do
+      aggregate_failures do
+        expect(File).to exist('abc150/A.rb')
+        expect(File).to exist('abc150/B.rb')
+        expect(File).to exist('abc150/C.rb')
+        expect(File).to exist('abc150/D.rb')
+        expect(File).to exist('abc150/E.rb')
+        expect(File).to exist('abc150/F.rb')
+      end
     end
 
-    it 'create spec file' do
-      expect(File.exist?('abc150/spec')).to be_truthy
-      expect(File.exist?('abc150/spec/A_spec.rb')).to be_truthy
-      expect(File.exist?('abc150/spec/B_spec.rb')).to be_truthy
-      expect(File.exist?('abc150/spec/C_spec.rb')).to be_truthy
-      expect(File.exist?('abc150/spec/D_spec.rb')).to be_truthy
-      expect(File.exist?('abc150/spec/E_spec.rb')).to be_truthy
-      expect(File.exist?('abc150/spec/F_spec.rb')).to be_truthy
+    it 'creates spec file' do
+      aggregate_failures do
+        expect(File).to exist('abc150/spec/A_spec.rb')
+        expect(File).to exist('abc150/spec/B_spec.rb')
+        expect(File).to exist('abc150/spec/C_spec.rb')
+        expect(File).to exist('abc150/spec/D_spec.rb')
+        expect(File).to exist('abc150/spec/E_spec.rb')
+        expect(File).to exist('abc150/spec/F_spec.rb')
+      end
     end
 
-    it 'write snippet code' do
-      expect(File.read('abc150/A.rb')).to eq(
-        <<~SNIPPET
-          # gets.split.map(&:to_i)
-          # readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
-        SNIPPET
-      )
-    end
-
-    it 'write spec code' do
+    it 'writes spec code' do
       expect(File.read('abc150/spec/A_spec.rb')).to eq(
         <<~SPEC
           RSpec.describe 'test' do
@@ -82,30 +75,30 @@ RSpec.describe GreenDay::Cli do
 
     # need Atcoder password and username in .env
     # see env.sample
-    before :example do
+    before do
       allow($stdin).to receive(:gets) do
         inputs.shift
       end
     end
 
-    after :example do
+    after do
       FileUtils.remove(GreenDay::AtcoderClient::COOKIE_FILE_NAME, force: true)
     end
 
-    context 'valid name and password' do
+    context 'with valid name and password' do
       let(:inputs) { [ENV['USER_NAME'], ENV['PASSWORD']] }
 
-      it 'create cookie-store' do
+      it 'creates cookie-store' do
         subject
 
-        expect(File.exist?('.cookie-store')).to be_truthy
+        expect(File).to exist('.cookie-store')
       end
     end
 
-    context 'invalid name and password' do
+    context 'with invalid name and password' do
       let(:inputs) { %w[invalid_name invalid_password] }
 
-      it 'raise error' do
+      it 'raises error' do
         expect { subject }.to raise_error(GreenDay::Error)
       end
     end
