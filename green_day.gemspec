@@ -31,12 +31,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'faraday-cookie_jar'
   spec.add_dependency 'nokogiri'
   spec.add_dependency 'parallel'
-  spec.add_dependency 'rspec', '~> 3.0'
   spec.add_dependency 'thor'
   spec.add_dependency 'webrick'
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'codecov'
   spec.add_development_dependency 'dotenv'
   spec.add_development_dependency 'rake', '>= 12.3.3'
+  spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop'
 end
