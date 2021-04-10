@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe GreenDay::Cli do
+RSpec.describe GreenDay::Cli, vcr: true do
   let!(:cli) { described_class.new }
 
   describe 'new [contest name]' do
@@ -73,8 +73,6 @@ RSpec.describe GreenDay::Cli do
   describe 'login' do
     subject { cli.login }
 
-    # need Atcoder password and username in .env
-    # see env.sample
     before do
       allow($stdin).to receive(:gets) do
         inputs.shift
@@ -86,7 +84,7 @@ RSpec.describe GreenDay::Cli do
     end
 
     context 'with valid name and password' do
-      let(:inputs) { [ENV['USER_NAME'], ENV['PASSWORD']] }
+      let(:inputs) { %w[valid_name valid_password] }
 
       it 'creates cookie-store' do
         subject

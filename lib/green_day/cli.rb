@@ -29,7 +29,7 @@ module GreenDay
       contest = Contest.new(contest_name, AtcoderClient.new)
       FileUtils.makedirs("#{contest.name}/spec")
 
-      Parallel.each(contest.tasks) do |task|
+      Parallel.each(contest.tasks, in_threads: THREAD_COUNT) do |task|
         create_submit_file(task)
         create_spec_file(task)
       end

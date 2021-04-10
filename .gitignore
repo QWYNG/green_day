@@ -7,7 +7,6 @@
 /spec/reports/
 /tmp/
 .idea
-.env
 # rspec failure tracking
 .rspec_status
 Gemfile.lock
