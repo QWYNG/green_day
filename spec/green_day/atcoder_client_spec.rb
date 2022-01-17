@@ -8,25 +8,21 @@ RSpec.describe GreenDay::AtcoderClient do
 
     context 'with .cookie-store' do
       before do
-        File.open('.cookie-store', 'w') do |f|
-          f.write(
-            <<~SESSION
-              ---
-              - !ruby/object:HTTP::Cookie
-                name: REVEL_SESSION
-                value: session_value
-                domain: atcoder.jp
-                for_domain: false
-                path: "/"
-                secure: false
-                httponly: true
-                expires:
-                max_age: 15552000
-                created_at: &1 2020-02-09 20:10:27.515657224 +09:00
-                accessed_at: *1
-            SESSION
-          )
-        end
+        File.write('.cookie-store', <<~SESSION)
+          ---
+          - !ruby/object:HTTP::Cookie
+            name: REVEL_SESSION
+            value: session_value
+            domain: atcoder.jp
+            for_domain: false
+            path: "/"
+            secure: false
+            httponly: true
+            expires:
+            max_age: 15552000
+            created_at: &1 2020-02-09 20:10:27.515657224 +09:00
+            accessed_at: *1
+        SESSION
       end
 
       after do
