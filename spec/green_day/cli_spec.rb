@@ -6,15 +6,17 @@ RSpec.describe GreenDay::Cli, vcr: true do
   let!(:cli) { described_class.new }
 
   describe 'new [contest name]' do
+    subject { cli.new(contest_name) }
+
     # https://atcoder.jp/contests/abc150
-    subject { cli.new('abc150') }
+    let(:contest_name) { 'abc150' }
 
     before do
       subject
     end
 
     after do
-      FileUtils.remove_entry_secure('abc150')
+      FileUtils.remove_entry_secure(contest_name)
     end
 
     it 'creates contest name dir and file for submit' do
@@ -67,6 +69,17 @@ RSpec.describe GreenDay::Cli, vcr: true do
           end
         SPEC
       )
+    end
+
+    context 'when contest with more tasks than A to Z' do
+      # https://atcoder.jp/contests/typical90
+      let(:contest_name) { 'typical90' }
+
+      it 'creates tasks until final task' do
+        # CL is final task code of typical90
+        expected_files = ('A'..'CL').map { |code| "#{code}.rb" }
+        expect(Dir.children('typical90') - ['spec']).to match_array(expected_files)
+      end
     end
   end
 

@@ -30,7 +30,7 @@ module GreenDay
 
       # 3問だったら<tbody>の中に<tr>が3 * 2個 </tbody> が1mh個
       tasks_size = ((body.at('tbody').children.size - 1) / 2.0).ceil
-      ('A'..'Z').to_a.shift(tasks_size)
+      ('A'..'ZZ').to_a.shift(tasks_size)
     end
 
     def fetch_inputs_and_outputs(contest, task)
