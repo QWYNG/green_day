@@ -49,9 +49,7 @@ module GreenDay
           submit_file_path(task),
           task.sample_answers
         )
-      File.open(spec_file_path(task), 'w') do |f|
-        f.write(test)
-      end
+      File.write(spec_file_path(task), test)
     end
 
     def submit_file_path(task)
