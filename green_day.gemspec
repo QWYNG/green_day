@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'colorize'
-  spec.add_dependency 'faraday', '< 1.0'
+  spec.add_dependency 'faraday'
   spec.add_dependency 'faraday-cookie_jar'
   spec.add_dependency 'nokogiri'
   spec.add_dependency 'parallel'
