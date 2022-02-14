@@ -54,7 +54,7 @@ module GreenDay
 
       unless login_succeed?
         ## ex error:Username or Password is incorrect
-        raise Error, CGI.unescape(select_flash_cookie.value).split('.').shift
+        raise Error, CGI.unescape(flash_cookie.value).split('.').shift
       end
 
       cookie_jar.save(COOKIE_FILE_NAME)
@@ -83,12 +83,13 @@ module GreenDay
     end
 
     def login_succeed?
-      flash_cookie = select_flash_cookie
       flash_cookie.value.include?('Welcome')
     end
 
-    def select_flash_cookie
-      cookie_jar.store.instance_variable_get(:@jar)['atcoder.jp']['/']['REVEL_FLASH']
+    def flash_cookie
+      @flash_cookie ||= cookie_jar.cookies("#{ATCODER_ENDPOINT}/login").find do |cookie|
+        cookie.name == 'REVEL_FLASH'
+      end
     end
 
     def get_parsed_body(path)
