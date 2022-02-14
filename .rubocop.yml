@@ -19,6 +19,6 @@ Metrics/BlockLength:
 RSpec/NamedSubject:
   Enabled: false
 RSpec/NestedGroups:
-  Max: 4
+  Max: 7
 RSpec/ExampleLength:
   Enabled: false
