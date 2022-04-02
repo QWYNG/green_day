@@ -28,14 +28,25 @@ module GreenDay
     def fetch_task_codes(contest)
       body = get_parsed_body("contests/#{contest.name}/tasks")
 
-      # 3問だったら<tbody>の中に<tr>が3 * 2個 </tbody> が1mh個
-      tasks_size = ((body.at('tbody').children.size - 1) / 2.0).ceil
-      ('A'..'ZZ').to_a.shift(tasks_size)
+      # TODO: URLに使われるコードと問題インデックス名は一致していないこともあるので
+      # ここで両方を返してTaskで別々に持っておいた方がいいかもしれない
+      body.search('tbody tr td:first a').map(&:text)
     end
 
     def fetch_inputs_and_outputs(contest, task)
-      contest_name = contest.name
-      path = "contests/#{contest_name}/tasks/#{contest_name}_#{task.code.downcase}"
+      # 数字であれば 'a'..'zz' に変換
+      if task.code.match?(/\d+/)
+        index = task.code.to_i.pred # NOTE: 001 から始まるものと決め打ちしている
+        suffix = [*'a'..'zz'].fetch(index)
+      else
+        suffix = task.code.downcase
+      end
+
+      # コンテスト名にハイフンが含まれている場合、
+      # アンダースコアに変換したものがタスクのURLの一部になるようだ
+      task_name = contest.name.gsub(/-/, '_')
+
+      path = "contests/#{contest.name}/tasks/#{task_name}_#{suffix}"
       body = get_parsed_body(path)
       samples = body.css('.lang-ja > .part > section > pre').map { |e| e.children.text }
 

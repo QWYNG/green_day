@@ -71,14 +71,23 @@ RSpec.describe GreenDay::Cli, vcr: true do
       )
     end
 
-    context 'when contest with more tasks than A to Z' do
+    context 'when contest with more tasks than 001 to 090' do
       # https://atcoder.jp/contests/typical90
       let(:contest_name) { 'typical90' }
 
       it 'creates tasks until final task' do
         # CL is final task code of typical90
-        expected_files = ('A'..'CL').map { |code| "#{code}.rb" }
+        expected_files = ('001'..'090').map { |code| "#{code}.rb" }
         expect(Dir.children('typical90') - ['spec']).to match_array(expected_files)
+      end
+    end
+
+    context 'when contest name contains hyphens' do
+      # https://atcoder.jp/contests/math-and-algorithm
+      let(:contest_name) { 'math-and-algorithm' }
+
+      it "task url is correct" do
+        expect(File.read('math-and-algorithm/spec/001_spec.rb')).to match(/expect/)
       end
     end
   end
