@@ -52,8 +52,6 @@ For example
    Example of output spec
    
    ```ruby
-  require 'rspec'
-
   RSpec.describe 'test' do
     it 'test with "2 900\\n"' do
       io = IO.popen("ruby abc150/A.rb", "w+")

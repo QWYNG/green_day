@@ -2,6 +2,6 @@
 
 RSpec.describe GreenDay do
   it 'has a version number' do
-    expect(GreenDay::VERSION).not_to be nil
+    expect(GreenDay::VERSION).not_to be_nil
   end
 end
