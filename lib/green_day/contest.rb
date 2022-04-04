@@ -8,7 +8,7 @@ module GreenDay
     attr_reader :atcoder_client, :name, :tasks
 
     def initialize(contest_name, client)
-      raise GreenDay::Error 'cant find contest' unless client.contest_exist?(contest_name)
+      raise GreenDay::Error 'could not find contest' unless client.contest_exist?(contest_name)
 
       @name = contest_name
 
