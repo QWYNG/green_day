@@ -86,7 +86,7 @@ RSpec.describe GreenDay::Cli, vcr: true do
       # https://atcoder.jp/contests/math-and-algorithm
       let(:contest_name) { 'math-and-algorithm' }
 
-      it "task url is correct" do
+      it 'task url is correct' do
         expect(File.read('math-and-algorithm/spec/001_spec.rb')).to match(/expect/)
       end
     end

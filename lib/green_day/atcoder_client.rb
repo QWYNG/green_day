@@ -20,39 +20,9 @@ module GreenDay
       end
     end
 
-    def contest_exist?(contest_name)
-      res = client.get("contests/#{contest_name}")
-      res.status == 200
-    end
-
-    def fetch_task_codes(contest)
-      body = get_parsed_body("contests/#{contest.name}/tasks")
-
-      # TODO: URLに使われるコードと問題インデックス名は一致していないこともあるので
-      # ここで両方を返してTaskで別々に持っておいた方がいいかもしれない
-      body.search('tbody tr td:first a').map(&:text)
-    end
-
-    def fetch_inputs_and_outputs(contest, task)
-      # 数字であれば 'a'..'zz' に変換
-      if task.code.match?(/\d+/)
-        index = task.code.to_i.pred # NOTE: 001 から始まるものと決め打ちしている
-        suffix = [*'a'..'zz'].fetch(index)
-      else
-        suffix = task.code.downcase
-      end
-
-      # コンテスト名にハイフンが含まれている場合、
-      # アンダースコアに変換したものがタスクのURLの一部になるようだ
-      task_name = contest.name.gsub(/-/, '_')
-
-      path = "contests/#{contest.name}/tasks/#{task_name}_#{suffix}"
-      body = get_parsed_body(path)
-      samples = body.css('.lang-ja > .part > section > pre').map { |e| e.children.text }
-
-      inputs, outputs = samples.partition.with_index { |_sample, i| i.even? }
-
-      [inputs, outputs]
+    def get_parsed_body(path)
+      res = client.get(path)
+      Nokogiri::HTML.parse(res.body)
     end
 
     def login(username, password)
@@ -101,11 +71,6 @@ module GreenDay
       @flash_cookie ||= cookie_jar.cookies("#{ATCODER_ENDPOINT}/login").find do |cookie|
         cookie.name == 'REVEL_FLASH'
       end
-    end
-
-    def get_parsed_body(path)
-      res = client.get(path)
-      Nokogiri::HTML.parse(res.body)
     end
   end
 end
