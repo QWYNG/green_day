@@ -53,11 +53,11 @@ module GreenDay
     end
 
     def submit_file_path(task)
-      "#{task.contest.name}/#{task.code}.rb"
+      "#{task.contest.name}/#{task.name}.rb"
     end
 
     def spec_file_path(task)
-      "#{task.contest.name}/spec/#{task.code}_spec.rb"
+      "#{task.contest.name}/spec/#{task.name}_spec.rb"
     end
   end
 end
