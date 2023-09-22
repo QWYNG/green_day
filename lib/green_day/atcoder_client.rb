@@ -28,9 +28,9 @@ module GreenDay
       csrf_token = obtain_atcoder_csrf_token
 
       client.post('/login',
-                  username: username,
-                  password: password,
-                  csrf_token: csrf_token)
+                  username:,
+                  password:,
+                  csrf_token:)
 
       unless login_succeed?
         ## ex error:Username or Password is incorrect

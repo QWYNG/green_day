@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'green_day/version'
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 2.7.1'
+  spec.required_ruby_version = '>= 3.2.1'
   spec.name          = 'green_day'
   spec.executables   = ['green_day']
   spec.version       = GreenDay::VERSION
@@ -33,14 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'parallel'
   spec.add_dependency 'thor'
   spec.add_dependency 'webrick'
-  spec.add_development_dependency 'bundler', '~> 2.0'
-  spec.add_development_dependency 'codecov'
-  spec.add_development_dependency 'dotenv'
-  spec.add_development_dependency 'rake', '>= 12.3.3'
-  spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'rubocop-rake'
-  spec.add_development_dependency 'rubocop-rspec'
-  spec.add_development_dependency 'vcr'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
