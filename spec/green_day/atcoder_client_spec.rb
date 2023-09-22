@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+Time.now# frozen_string_literal: true
 
 require 'spec_helper'
 
@@ -20,7 +20,7 @@ RSpec.describe GreenDay::AtcoderClient do
             httponly: true
             expires:
             max_age: #{max_age}
-            created_at: &1 2020-02-09 20:10:27.515657224 +09:00
+            created_at: &1 #{Time.now - 1}
             accessed_at: *1
         SESSION
       end
@@ -30,7 +30,7 @@ RSpec.describe GreenDay::AtcoderClient do
       end
 
       context 'with expired cookie' do
-        let(:max_age) { 15_552_000 }
+        let(:max_age) { 0 }
 
         it 'does not initialize with cookie' do
           expect(subject.cookie_jar.cookies).to be_empty
@@ -41,7 +41,7 @@ RSpec.describe GreenDay::AtcoderClient do
         let(:max_age) { 99_999_999 }
 
         it 'initializes with cookie' do
-          expect(subject.cookie_jar.cookies).not_to be_empty
+          expect(subject.cookie_jar.empty?).to be false
         end
 
         context 'with cookie-store ## old file name' do
@@ -59,7 +59,7 @@ RSpec.describe GreenDay::AtcoderClient do
           end
 
           it 'initializes with cookie' do
-            expect(subject.cookie_jar.cookies).not_to be_empty
+            expect(subject.cookie_jar.empty?).to be false
           end
         end
       end
@@ -67,7 +67,7 @@ RSpec.describe GreenDay::AtcoderClient do
 
     context 'without cookie-store' do
       it 'initializes without cookie' do
-        expect(subject.cookie_jar.cookies).to be_empty
+        expect(subject.cookie_jar.empty?).to be true
       end
     end
   end
