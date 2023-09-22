@@ -1,4 +1,6 @@
-Time.now# frozen_string_literal: true
+# frozen_string_literal: true
+
+Time.now # frozen_string_literal: true
 
 require 'spec_helper'
 

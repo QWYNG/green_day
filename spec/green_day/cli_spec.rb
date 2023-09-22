@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe GreenDay::Cli, vcr: true do
+RSpec.describe GreenDay::Cli, :vcr do
   let!(:cli) { described_class.new }
 
   describe 'new [contest name]' do
