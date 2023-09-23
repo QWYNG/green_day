@@ -17,7 +17,7 @@ module GreenDay
       print 'password:'
       password = $stdin.noecho { |stdin| stdin.gets(chomp: true) }.tap { puts }
 
-      AtcoderClient.new.login(username, password)
+      AtcoderClient.login(username, password)
       puts(
         "Successfully created #{AtcoderClient::COOKIE_FILE_NAME}"
         .colorize(:green)
@@ -26,38 +26,36 @@ module GreenDay
 
     desc 'new [contest name]', 'create contest workspace and spec'
     def new(contest_name)
-      contest = Contest.new(contest_name, AtcoderClient.new)
+      contest = Contest.new(contest_name)
       FileUtils.makedirs("#{contest.name}/spec")
 
-      Parallel.each(contest.tasks, in_threads: THREAD_COUNT) do |task|
-        create_submit_file(task)
-        create_spec_file(task)
-      end
+      contest.tasks.map do |task|
+        create_files_in_thread(task)
+      end.each(&:join)
 
       puts "Successfully created #{contest.name} directory".colorize(:green)
     end
 
     private
 
-    def create_submit_file(task)
-      File.open(submit_file_path(task), 'w')
+    def create_files_in_thread(task)
+      Thread.new do
+        create_task_file(task)
+        create_task_spec_file(task)
+      end
     end
 
-    def create_spec_file(task)
-      test =
-        TestBuilder.build_test(
-          submit_file_path(task),
-          task.sample_answers
-        )
-      File.write(spec_file_path(task), test)
+    def create_task_file(task)
+      FileUtils.touch(task_file_name(task))
     end
 
-    def submit_file_path(task)
+    def create_task_spec_file(task)
+      test_content = TestBuilder.build_test(task_file_name(task), task.sample_answers)
+      File.write("#{task.contest.name}/spec/#{task.name}_spec.rb", test_content)
+    end
+
+    def task_file_name(task)
       "#{task.contest.name}/#{task.name}.rb"
-    end
-
-    def spec_file_path(task)
-      "#{task.contest.name}/spec/#{task.name}_spec.rb"
     end
   end
 end
