@@ -9,7 +9,12 @@ module GreenDay
     def initialize(contest_name)
       @name = contest_name
 
-      @tasks = fetch_task_names_and_paths.map do |task_name, task_path|
+      @tasks = fetch_task_names_and_paths.map.with_index do |(task_name, task_path), i|
+        if !i.zero? && (i % 10).zero? && !ENV['CI']
+          puts 'Sleeping 2 second to avoid 429 error'
+          sleep 2
+        end
+
         Thread.new do
           Task.new(self, task_name, task_path)
         end
