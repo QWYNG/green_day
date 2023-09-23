@@ -2,7 +2,6 @@
 
 require 'faraday'
 require 'faraday-cookie_jar'
-require 'webrick/cookie'
 require 'nokogiri'
 
 module GreenDay
