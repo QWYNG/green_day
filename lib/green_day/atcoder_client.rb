@@ -8,11 +8,19 @@ module GreenDay
   class AtcoderClient
     ATCODER_ENDPOINT = 'https://atcoder.jp'
     COOKIE_FILE_NAME = '.cookie-store'
-    attr_reader :client, :cookie_jar
+    attr_reader :conn, :cookie_jar
+
+    def self.login(username, password)
+      new.login(username, password)
+    end
+
+    def self.get_parsed_body(path)
+      new.get_parsed_body(path)
+    end
 
     def initialize
       @cookie_jar = create_or_load_cookie_jar
-      @client = Faraday.new(url: ATCODER_ENDPOINT) do |builder|
+      @conn = Faraday.new(url: ATCODER_ENDPOINT) do |builder|
         builder.use :cookie_jar, jar: cookie_jar
         builder.request :url_encoded
         builder.adapter :net_http
@@ -20,17 +28,17 @@ module GreenDay
     end
 
     def get_parsed_body(path)
-      res = client.get(path)
+      res = conn.get(path)
       Nokogiri::HTML.parse(res.body)
     end
 
     def login(username, password)
       csrf_token = obtain_atcoder_csrf_token
 
-      client.post('/login',
-                  username:,
-                  password:,
-                  csrf_token:)
+      conn.post('/login',
+                username:,
+                password:,
+                csrf_token:)
 
       unless login_succeed?
         ## ex error:Username or Password is incorrect
@@ -55,11 +63,11 @@ module GreenDay
     end
 
     def obtain_atcoder_csrf_token
-      get_login_response = client.get('/login')
+      get_login_response = conn.get('/login')
       login_html = Nokogiri::HTML.parse(get_login_response.body)
       login_html.at('input[name="csrf_token"]')['value']
     rescue StandardError
-      raise Error, 'cant get_csrf_token'
+      raise Error, 'can not get_csrf_token'
     end
 
     def login_succeed?

@@ -30,8 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'faraday'
   spec.add_dependency 'faraday-cookie_jar'
   spec.add_dependency 'nokogiri'
-  spec.add_dependency 'parallel'
   spec.add_dependency 'thor'
-  spec.add_dependency 'webrick'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end

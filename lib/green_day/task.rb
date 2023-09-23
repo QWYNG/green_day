@@ -1,16 +1,10 @@
 # frozen_string_literal: true
 
-require 'forwardable'
-
 module GreenDay
   class Task
-    extend Forwardable
-    delegate get_parsed_body: :@client
-
     attr_reader :contest, :name, :path, :sample_answers
 
-    def initialize(contest, name, path, client)
-      @client = client
+    def initialize(contest, name, path)
       @contest = contest
       @name = name
       @path = path
@@ -26,7 +20,7 @@ module GreenDay
     end
 
     def fetch_inputs_and_outputs
-      body = get_parsed_body(path)
+      body = AtcoderClient.get_parsed_body(path)
       samples = body.css('.lang-ja > .part > section > pre').map { |e| e.children.text }
 
       inputs, outputs = samples.partition.with_index { |_sample, i| i.even? }
