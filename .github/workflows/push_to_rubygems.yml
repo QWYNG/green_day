@@ -3,13 +3,6 @@ name: Bump version and Push to RubyGems
 on:
   workflow_dispatch:
     inputs:
-      miner-or-major:
-        description: 'Minor or major release'
-        required: true
-        default: 'minor'
-        options:
-          - 'minor'
-          - 'major'
       email:
         description: Your email
         required: true
@@ -32,15 +25,11 @@ jobs:
           ruby-version: 3.2
 
       - run: bundle install
-      - run: gem install gem-release
 
       - name: config
         run: |
           git config --global user.email ${{ github.event.inputs.email }}
           git config --global user.name ${{ github.actor }}
-
-      - name: Bump version
-        run: gem bump --version ${{ github.event.inputs.miner-or-major }}
 
       - name: Publish to RubyGems
         run: |
