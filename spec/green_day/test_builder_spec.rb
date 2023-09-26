@@ -15,10 +15,15 @@ RSpec.describe GreenDay::TestBuilder do
       expect(subject).to eq(
         <<~SPEC
           \s\sit 'test with "2 900\\n"' do
-          \s\s\s\sio = IO.popen("ruby submit_file", "w+")
-          \s\s\s\sio.puts("2 900\\n")
-          \s\s\s\sio.close_write
-          \s\s\s\sexpect(io.readlines.join).to eq("Yes\\n")
+          \s\s\s\sif ENV['GD_REPL']
+          \s\s\s\s\s\sFile.chmod(0o755, 'submit_file')
+          \s\s\s\s\s\ssystem(%q(expect -c 'set timeout 2; spawn ruby submit_file; send "2 900\\n\\\\004"; interact'))
+          \s\s\s\selse
+          \s\s\s\s\s\sio = IO.popen('ruby submit_file', 'w+')
+          \s\s\s\s\s\sio.puts("2 900\\n")
+          \s\s\s\s\s\sio.close_write
+          \s\s\s\s\s\sexpect(io.readlines.join).to eq("Yes\\n")
+          \s\s\s\send
           \s\send
         SPEC
       )
@@ -33,19 +38,29 @@ RSpec.describe GreenDay::TestBuilder do
     it {
       expect(subject).to eq(
         <<~SPEC
-          RSpec.describe 'test' do
+          RSpec.describe 'submit_file' do
           \s\sit 'test with "2 900\\n"' do
-          \s\s\s\sio = IO.popen("ruby submit_file", "w+")
-          \s\s\s\sio.puts("2 900\\n")
-          \s\s\s\sio.close_write
-          \s\s\s\sexpect(io.readlines.join).to eq("Yes\\n")
+          \s\s\s\sif ENV['GD_REPL']
+          \s\s\s\s\s\sFile.chmod(0o755, 'submit_file')
+          \s\s\s\s\s\ssystem(%q(expect -c 'set timeout 2; spawn ruby submit_file; send "2 900\\n\\\\004"; interact'))
+          \s\s\s\selse
+          \s\s\s\s\s\sio = IO.popen('ruby submit_file', 'w+')
+          \s\s\s\s\s\sio.puts("2 900\\n")
+          \s\s\s\s\s\sio.close_write
+          \s\s\s\s\s\sexpect(io.readlines.join).to eq("Yes\\n")
+          \s\s\s\send
           \s\send
 
           \s\sit 'test with "3 900\\n"' do
-          \s\s\s\sio = IO.popen("ruby submit_file", "w+")
-          \s\s\s\sio.puts("3 900\\n")
-          \s\s\s\sio.close_write
-          \s\s\s\sexpect(io.readlines.join).to eq("No\\n")
+          \s\s\s\sif ENV['GD_REPL']
+          \s\s\s\s\s\sFile.chmod(0o755, 'submit_file')
+          \s\s\s\s\s\ssystem(%q(expect -c 'set timeout 2; spawn ruby submit_file; send "3 900\\n\\\\004"; interact'))
+          \s\s\s\selse
+          \s\s\s\s\s\sio = IO.popen('ruby submit_file', 'w+')
+          \s\s\s\s\s\sio.puts("3 900\\n")
+          \s\s\s\s\s\sio.close_write
+          \s\s\s\s\s\sexpect(io.readlines.join).to eq("No\\n")
+          \s\s\s\send
           \s\send
 
           end
