@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'thor'
-require 'parallel'
 require 'colorize'
 require 'io/console'
 require_relative 'atcoder_client'
