@@ -2,21 +2,35 @@
 
 module GreenDay
   class Task
-    attr_reader :contest, :name, :path, :sample_answers
+    SampleAnswer = Struct.new(:input, :output)
+    attr_reader :name, :path, :contest_name
 
-    def initialize(contest, name, path)
-      @contest = contest
+    def initialize(name, path, contest_name)
       @name = name
       @path = path
-      @sample_answers = create_sample_answers_hash
+      @contest_name = contest_name
+    end
+
+    def create_file
+      FileUtils.touch(file_name)
+    end
+
+    def create_spec_file
+      test_content = TestBuilder.build_test(
+        file_name,
+        sample_answers
+      )
+      File.write("#{contest_name}/spec/#{name}_spec.rb", test_content)
     end
 
     private
 
-    def create_sample_answers_hash
+    def sample_answers
       input_samples, output_samples = fetch_inputs_and_outputs
 
-      input_samples.zip(output_samples).to_h
+      input_samples.zip(output_samples).map do |input, output|
+        SampleAnswer.new(input, output)
+      end
     end
 
     def fetch_inputs_and_outputs
@@ -26,6 +40,10 @@ module GreenDay
       inputs, outputs = samples.partition.with_index { |_sample, i| i.even? }
 
       [inputs, outputs]
+    end
+
+    def file_name
+      "#{contest_name}/#{name}.rb"
     end
   end
 end

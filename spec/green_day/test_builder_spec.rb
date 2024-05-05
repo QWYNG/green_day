@@ -31,9 +31,12 @@ RSpec.describe GreenDay::TestBuilder do
   end
 
   describe '.build_test' do
-    subject { described_class.build_test(submit_file_path, input_output_hash) }
+    subject { described_class.build_test(submit_file_path, sample_answers) }
 
-    let(:input_output_hash) { { "2 900\n" => "Yes\n", "3 900\n" => "No\n" } }
+    let(:sample_answers) do
+      [GreenDay::Task::SampleAnswer.new("2 900\n", "Yes\n"),
+       GreenDay::Task::SampleAnswer.new("3 900\n", "No\n")]
+    end
 
     it {
       expect(subject).to eq(

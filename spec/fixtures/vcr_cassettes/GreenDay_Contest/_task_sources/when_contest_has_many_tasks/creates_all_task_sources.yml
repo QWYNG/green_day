@@ -1,0 +1,542 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://atcoder.jp/contests/typical90/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/html; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      date:
+      - Sun, 05 May 2024 04:42:48 GMT
+      server:
+      - nginx
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - no-cache, no-store, must-revalidate, private
+      expires:
+      - Fri, 1 Jan 2010 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-encoding:
+      - gzip
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 00831430bdf5c6de78e9cd44c46a222a.cloudfront.net (CloudFront)
+      x-amz-cf-pop:
+      - NRT12-C3
+      x-amz-cf-id:
+      - 7GsJQaDmWUwdBXa2a9rXAmf4JAB7vp_lQKG55XiWi1gHAyu5xvzBKA==
+      x-frame-options:
+      - SAMEORIGIN
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "\n\n\n\n<!DOCTYPE html>\n<html>\n<head>\n\t<title>Tasks - 競プロ典型 90
+        問</title>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n\t<meta
+        http-equiv=\"Content-Language\" content=\"en\">\n\t<meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1.0\">\n\t<meta name=\"format-detection\"
+        content=\"telephone=no\">\n\t<meta name=\"google-site-verification\" content=\"nXGC_JxO0yoP1qBzMnYD_xgufO6leSLw1kyNo2HZltM\"
+        />\n\n\t\n\t<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-RC512FD18N\"></script>\n\t<script>\n\t\twindow.dataLayer
+        = window.dataLayer || [];\n\t\tfunction gtag(){dataLayer.push(arguments);}\n\t\tgtag('js',
+        new Date());\n\n\t\tgtag('config', 'G-RC512FD18N');\n\t</script>\n\n\t\n\t<meta
+        name=\"description\" content=\"AtCoder is a programming contest site for anyone
+        from beginners to experts. We hold weekly programming contests online.\">\n\t<meta
+        name=\"author\" content=\"AtCoder Inc.\">\n\n\t<meta property=\"og:site_name\"
+        content=\"AtCoder\">\n\t\n\t<meta property=\"og:title\" content=\"Tasks -
+        競プロ典型 90 問\" />\n\t<meta property=\"og:description\" content=\"AtCoder is
+        a programming contest site for anyone from beginners to experts. We hold weekly
+        programming contests online.\" />\n\t<meta property=\"og:type\" content=\"website\"
+        />\n\t<meta property=\"og:url\" content=\"https://atcoder.jp/contests/typical90/tasks\"
+        />\n\t<meta property=\"og:image\" content=\"https://img.atcoder.jp/assets/atcoder.png\"
+        />\n\t<meta name=\"twitter:card\" content=\"summary\" />\n\t<meta name=\"twitter:site\"
+        content=\"@atcoder\" />\n\t\n\t<meta property=\"twitter:title\" content=\"Tasks
+        - 競プロ典型 90 問\" />\n\n\t<link href=\"//fonts.googleapis.com/css?family=Lato:400,700\"
+        rel=\"stylesheet\" type=\"text/css\">\n\t<link rel=\"stylesheet\" type=\"text/css\"
+        href=\"//img.atcoder.jp/public/ea27d23/css/bootstrap.min.css\">\n\t<link rel=\"stylesheet\"
+        type=\"text/css\" href=\"//img.atcoder.jp/public/ea27d23/css/base.css\">\n\t<link
+        rel=\"shortcut icon\" type=\"image/png\" href=\"//img.atcoder.jp/assets/favicon.png\">\n\t<link
+        rel=\"apple-touch-icon\" href=\"//img.atcoder.jp/assets/atcoder.png\">\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/lib/jquery-1.9.1.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/lib/bootstrap.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/js.cookie.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/moment.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/moment_js-ja.js\"></script>\n\t<script>\n\t\tvar
+        LANG = \"en\";\n\t\tvar userScreenName = \"\";\n\t\tvar csrfToken = \"xVgDND9m8FCyNGSa6bV4cBjMqBeaWbwE1dS3IOgJaCk=\"\n\t</script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/utils.js\"></script>\n\t\n\t\n\t\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/contest.js\"></script>\n\t\t<link
+        href=\"//img.atcoder.jp/public/ea27d23/css/contest.css\" rel=\"stylesheet\"
+        />\n\t\t<script>\n\t\t\tvar contestScreenName = \"typical90\";\n\t\t\tvar
+        remainingText = \"Remaining Time\";\n\t\t\tvar countDownText = \"Contest begins
+        in\";\n\t\t\tvar startTime = moment(\"2021-04-20T19:20:00+09:00\");\n\t\t\tvar
+        endTime = moment(\"5021-07-11T19:00:00+09:00\");\n\t\t</script>\n\t\t<style></style>\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/base.js\"></script>\n</head>\n\n<body>\n\n<script
+        type=\"text/javascript\">\n\tvar __pParams = __pParams || [];\n\t__pParams.push({client_id:
+        '468', c_1: 'atcodercontest', c_2: 'ClientSite'});\n</script>\n<script type=\"text/javascript\"
+        src=\"https://cdn.d2-apps.net/js/tr.js\" async></script>\n\n\n<div id=\"modal-contest-start\"
+        class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n\t<div class=\"modal-dialog\"
+        role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header\">\n\t\t\t\t<button
+        type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span
+        aria-hidden=\"true\">&times;</span></button>\n\t\t\t\t<h4 class=\"modal-title\">Contest
+        started</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>競プロ典型
+        90 問 has begun.</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t\n\t\t\t\t\t<button
+        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t\t\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<div
+        id=\"modal-contest-end\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n\t<div
+        class=\"modal-dialog\" role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div
+        class=\"modal-header\">\n\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\"
+        aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n\t\t\t\t<h4
+        class=\"modal-title\">Contest is over</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>競プロ典型
+        90 問 has ended.</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button
+        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<div
+        id=\"main-div\" class=\"float-container\">\n\n\n\t<nav class=\"navbar navbar-inverse
+        navbar-fixed-top\">\n\t\t<div class=\"container-fluid\">\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<button
+        type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"
+        data-target=\"#navbar-collapse\" aria-expanded=\"false\">\n\t\t\t\t\t<span
+        class=\"icon-bar\"></span><span class=\"icon-bar\"></span><span class=\"icon-bar\"></span>\n\t\t\t\t</button>\n\t\t\t\t<a
+        class=\"navbar-brand\" href=\"/home\"></a>\n\t\t\t</div>\n\t\t\t<div class=\"collapse
+        navbar-collapse\" id=\"navbar-collapse\">\n\t\t\t\t<ul class=\"nav navbar-nav\">\n\t\t\t\t\n\t\t\t\t\t<li><a
+        class=\"contest-title\" href=\"/contests/typical90\">競プロ典型 90 問</a></li>\n\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t\t<ul
+        class=\"nav navbar-nav navbar-right\">\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t<a
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\"
+        aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t\t\t\t\t\t<img src='//img.atcoder.jp/assets/top/img/flag-lang/en.png'>
+        English <span class=\"caret\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<ul class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<li><a
+        href=\"/contests/typical90/tasks?lang=ja\"><img src='//img.atcoder.jp/assets/top/img/flag-lang/ja.png'>
+        日本語</a></li>\n\t\t\t\t\t\t\t<li><a href=\"/contests/typical90/tasks?lang=en\"><img
+        src='//img.atcoder.jp/assets/top/img/flag-lang/en.png'> English</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t<li><a
+        href=\"/register?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Ftypical90%2Ftasks\">Sign
+        Up</a></li>\n\t\t\t\t\t\t<li><a href=\"/login?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Ftypical90%2Ftasks\">Sign
+        In</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n\n\t<form
+        method=\"POST\" name=\"form_logout\" action=\"/logout?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Ftypical90%2Ftasks\">\n\t\t<input
+        type=\"hidden\" name=\"csrf_token\" value=\"xVgDND9m8FCyNGSa6bV4cBjMqBeaWbwE1dS3IOgJaCk=\"
+        />\n\t</form>\n\t<div id=\"main-container\" class=\"container\"\n\t\t \tstyle=\"padding-top:50px;\">\n\t\t\n\n\n<div
+        class=\"row\">\n\t<div id=\"contest-nav-tabs\" class=\"col-sm-12 mb-2 cnvtb-fixed\">\n\t<div>\n\t\t<small
+        class=\"contest-duration\">\n\t\t\t\n\t\t\t\tContest Duration:\n\t\t\t\t<a
+        href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=20210420T1920&p1=248'
+        target='blank'><time class='fixtime fixtime-full'>2021-04-20 19:20:00+0900</time></a>
+        - <a href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=50210711T1900&p1=248'
+        target='blank'><time class='fixtime fixtime-full'>5021-07-11 19:00:00+0900</time></a>
+        (local time)\n\t\t\t\t\n\t\t\t\n\t\t</small>\n\t\t<small class=\"back-to-home
+        pull-right\"><a href=\"/home\">Back to Home</a></small>\n\t</div>\n\t<ul class=\"nav
+        nav-tabs\">\n\t\t<li><a href=\"/contests/typical90\"><span class=\"glyphicon
+        glyphicon-home\" aria-hidden=\"true\"></span> Top</a></li>\n\t\t\n\t\t\t<li
+        class=\"active\"><a href=\"/contests/typical90/tasks\"><span class=\"glyphicon
+        glyphicon-tasks\" aria-hidden=\"true\"></span> Tasks</a></li>\n\t\t\n\n\t\t\n\t\t\t<li><a
+        href=\"/contests/typical90/clarifications\"><span class=\"glyphicon glyphicon-question-sign\"
+        aria-hidden=\"true\"></span> Clarifications <span id=\"clar-badge\" class=\"badge\"></span></a></li>\n\t\t\n\n\t\t\n\n\t\t\n\t\t\t<li>\n\t\t\t\t<a
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\"
+        aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"glyphicon glyphicon-list\"
+        aria-hidden=\"true\"></span> Results<span class=\"caret\"></span></a>\n\t\t\t\t<ul
+        class=\"dropdown-menu\">\n\t\t\t\t\t<li><a href=\"/contests/typical90/submissions\"><span
+        class=\"glyphicon glyphicon-globe\" aria-hidden=\"true\"></span> All Submissions</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\n\n\t\t\n\t\t\t\n\t\t\n\n\t\t\n\n\t\t\n\t\t\t<li><a
+        href=\"/contests/typical90/editorial\"><span class=\"glyphicon glyphicon-book\"
+        aria-hidden=\"true\"></span> Editorial</a></li>\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\t\t<li
+        class=\"pull-right\"><a id=\"fix-cnvtb\" href=\"javascript:void(0)\"><span
+        class=\"glyphicon glyphicon-pushpin\" aria-hidden=\"true\"></span></a></li>\n\t</ul>\n</div>\n\t<div
+        class=\"col-sm-12\">\n\t\t<h2>Tasks</h2>\n\t\t<hr>\n\t\t\n\t\t\t<div class=\"panel
+        panel-default table-responsive\"><table class=\"table table-bordered table-striped\">\n\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th
+        width=\"3%\" class=\"text-center\"></th>\n\t\t\t\t\t\t<th>Task Name</th>\n\t\t\t\t\t\t<th
+        width=\"10%\" class=\"text-right no-break\">Time Limit</th>\n\t\t\t\t\t\t<th
+        width=\"10%\" class=\"text-right no-break\">Memory Limit</th>\n\t\t\t\t\t\t\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t<tbody>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_a\">001</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_a\">Yokan Party（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_b\">002</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_b\">Encyclopedia of Parentheses（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_c\">003</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_c\">Longest Circular Road（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_d\">004</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_d\">Cross Sum（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">5 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_e\">005</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_e\">Restricted Digits（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">5 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_f\">006</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_f\">Smallest Subsequence（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_g\">007</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_g\">CP Classes（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_h\">008</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_h\">AtCounter（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_i\">009</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_i\">Three Point Angle（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_j\">010</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_j\">Score Sum Queries（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_k\">011</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_k\">Gravy Jobs（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_l\">012</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_l\">Red Painting（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_m\">013</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_m\">Passing（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_n\">014</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_n\">We Used to Sing a Song Together（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_o\">015</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_o\">Don&#39;t be too close（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_p\">016</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_p\">Minimum Coins（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_q\">017</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_q\">Crossing Segments（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_r\">018</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_r\">Statue of Chokudai（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_s\">019</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_s\">Pick Two（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_t\">020</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_t\">Log Inequality（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_u\">021</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_u\">Come Back in One Piece（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_v\">022</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_v\">Cubic Cake（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_w\">023</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_w\">Avoid War（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">8 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2048
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_x\">024</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_x\">Select &#43;／- One（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_y\">025</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_y\">Digit Product Equation（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_z\">026</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_z\">Independent Set on a Tree（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_aa\">027</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_aa\">Sign Up Requests （★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ab\">028</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ab\">Cluttered Paper（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ac\">029</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ac\">Long Bricks（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">4 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ad\">030</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ad\">K Factors（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ae\">031</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ae\">VS AtCoder（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_af\">032</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_af\">AtCoder Ekiden（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">5 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ag\">033</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ag\">Not Too Bright（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ah\">034</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ah\">There are few types of elements（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ai\">035</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ai\">Preserve Connectivity（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_aj\">036</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_aj\">Max Manhattan Distance（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ak\">037</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ak\">Don&#39;t Leave the Spice（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_al\">038</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_al\">Large LCM（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_am\">039</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_am\">Tree Distance（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_an\">040</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_an\">Get More Money（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ao\">041</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ao\">Piles in AtCoder Farm（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ap\">042</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ap\">Multiple of 9（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_aq\">043</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_aq\">Maze Challenge with Lack of
+        Sleep（★4）</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ar\">044</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ar\">Shift and Swapping（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_as\">045</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_as\">Simple Grouping（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_at\">046</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_at\">I Love 46（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_au\">047</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_au\">Monochromatic Diagonal（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_av\">048</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_av\">I will not drop out（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_aw\">049</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_aw\">Flip Digits 2（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ax\">050</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ax\">Stair Jump（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ay\">051</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ay\">Typical Shop（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_az\">052</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_az\">Dice Product（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ba\">053</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ba\">Discrete Dowsing（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bb\">054</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bb\">Takahashi Number（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bc\">055</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bc\">Select 5（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">5 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bd\">056</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bd\">Lucky Bag（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_be\">057</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_be\">Flip Flap（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bf\">058</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bf\">Original Calculator（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bg\">059</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bg\">Many Graph Queries（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bh\">060</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bh\">Chimera（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bi\">061</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bi\">Deck（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bj\">062</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bj\">Paint All（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bk\">063</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bk\">Monochromatic Subgrid（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">4 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bl\">064</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bl\">Uplift（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bm\">065</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bm\">RGB Balls 2（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bn\">066</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bn\">Various Arrays（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bo\">067</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bo\">Base 8 to 9（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bp\">068</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bp\">Paired Information（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bq\">069</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bq\">Colorful Blocks 2（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_br\">070</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_br\">Plant Planning（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bs\">071</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bs\">Fuzzy Priority（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bt\">072</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bt\">Loop Railway Plan（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bu\">073</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bu\">We Need Both a and b（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bv\">074</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bv\">ABC String 2（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bw\">075</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bw\">Magic For Balls（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bx\">076</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bx\">Cake Cut（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_by\">077</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_by\">Planes on a 2D Plane（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1.5 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_bz\">078</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_bz\">Easy Graph Problem（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ca\">079</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ca\">Two by Two（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_cb\">080</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_cb\">Let&#39;s Share Bit（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_cc\">081</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_cc\">Friendly Group（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_cd\">082</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_cd\">Counting Numbers（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ce\">083</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ce\">Colorful Graph（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_cf\">084</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_cf\">There are two types of characters（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_cg\">085</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_cg\">Multiplication 085（★4）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ch\">086</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ch\">Snuke&#39;s Favorite Arrays（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ci\">087</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ci\">Chokudai&#39;s Demand（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_cj\">088</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_cj\">Similar but Different Ways（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_ck\">089</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_ck\">Partitions and Inversions（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/typical90/tasks/typical90_cl\">090</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/typical90/tasks/typical90_cl\">Tenkei90&#39;s Last Problem（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">7 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t</tbody>\n\t\t\t</table></div>\n\t\t\n\t\t<p
+        class=\"btn-text-group\">\n\t\t\t\n\t\t\t\n\t\t\t<a class=\"btn-text\" href=\"/contests/typical90/tasks_print\">Tasks
+        for printing</a>\n\t\t</p>\n\t\t\n\t\t\n\t\t\n\t</div>\n</div>\n\n\n\n\n\t\t\n\t\t\t<hr>\n\t\t\t\n\t\t\t\n\t\t\t\n<div
+        class=\"a2a_kit a2a_kit_size_20 a2a_default_style pull-right\" data-a2a-url=\"https://atcoder.jp/contests/typical90/tasks?lang=en\"
+        data-a2a-title=\"Tasks - 競プロ典型 90 問\">\n\t<a class=\"a2a_button_facebook\"></a>\n\t<a
+        class=\"a2a_button_twitter\"></a>\n\t\n\t\t<a class=\"a2a_button_telegram\"></a>\n\t\n\t<a
+        class=\"a2a_dd\" href=\"https://www.addtoany.com/share\"></a>\n</div>\n\n\t\t\n\t\t<script
+        async src=\"//static.addtoany.com/menu/page.js\"></script>\n\t\t\n\t</div>
+        \n\t<hr>\n</div> \n\n\t<div class=\"container\" style=\"margin-bottom: 80px;\">\n\t\t\t<footer
+        class=\"footer\">\n\t\t\t\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"/contests/typical90/rules\">Rule</a></li>\n\t\t\t\t\t<li><a
+        href=\"/contests/typical90/glossary\">Glossary</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t\n\t\t\t<ul>\n\t\t\t\t<li><a
+        href=\"/tos\">Terms of service</a></li>\n\t\t\t\t<li><a href=\"/privacy\">Privacy
+        Policy</a></li>\n\t\t\t\t<li><a href=\"/personal\">Information Protection
+        Policy</a></li>\n\t\t\t\t<li><a href=\"/company\">Company</a></li>\n\t\t\t\t<li><a
+        href=\"/faq\">FAQ</a></li>\n\t\t\t\t<li><a href=\"/contact\">Contact</a></li>\n\t\t\t\t\n\t\t\t</ul>\n\t\t\t<div
+        class=\"text-center\">\n\t\t\t\t\t<small id=\"copyright\">Copyright Since
+        2012 &copy;<a href=\"http://atcoder.co.jp\">AtCoder Inc.</a> All rights reserved.</small>\n\t\t\t</div>\n\t\t\t</footer>\n\t</div>\n\t<p
+        id=\"fixed-server-timer\" class=\"contest-timer\"></p>\n\t<div id=\"scroll-page-top\"
+        style=\"display:none;\"><span class=\"glyphicon glyphicon-arrow-up\" aria-hidden=\"true\"></span>
+        Page Top</div>\n\n</body>\n</html>\n\n\n"
+  recorded_at: Sun, 05 May 2024 04:42:48 GMT
+recorded_with: VCR 6.2.0

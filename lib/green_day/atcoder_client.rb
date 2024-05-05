@@ -29,6 +29,12 @@ module GreenDay
 
     def get_parsed_body(path)
       res = conn.get(path)
+      if res.status == 429
+        puts "429 error with #{path} retrying..."
+        sleep 1
+        return get_parsed_body(path)
+      end
+
       Nokogiri::HTML.parse(res.body)
     end
 
