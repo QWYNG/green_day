@@ -1,0 +1,213 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://atcoder.jp/contests/abc150/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/html; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      date:
+      - Sun, 05 May 2024 04:42:48 GMT
+      server:
+      - nginx
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - no-cache, no-store, must-revalidate, private
+      expires:
+      - Fri, 1 Jan 2010 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-encoding:
+      - gzip
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 dc0a1069b208b388553d3dc359c4e480.cloudfront.net (CloudFront)
+      x-amz-cf-pop:
+      - NRT12-C3
+      x-amz-cf-id:
+      - XJUjpRnE1bMLO-mipOI-E44RNg_vxPZYO1JgHglriKTL297lfM8T9g==
+      x-frame-options:
+      - SAMEORIGIN
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "\n\n\n\n<!DOCTYPE html>\n<html>\n<head>\n\t<title>Tasks - AtCoder Beginner
+        Contest 150</title>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=utf-8\">\n\t<meta http-equiv=\"Content-Language\" content=\"en\">\n\t<meta
+        name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\t<meta
+        name=\"format-detection\" content=\"telephone=no\">\n\t<meta name=\"google-site-verification\"
+        content=\"nXGC_JxO0yoP1qBzMnYD_xgufO6leSLw1kyNo2HZltM\" />\n\n\t\n\t<script
+        async src=\"https://www.googletagmanager.com/gtag/js?id=G-RC512FD18N\"></script>\n\t<script>\n\t\twindow.dataLayer
+        = window.dataLayer || [];\n\t\tfunction gtag(){dataLayer.push(arguments);}\n\t\tgtag('js',
+        new Date());\n\n\t\tgtag('config', 'G-RC512FD18N');\n\t</script>\n\n\t\n\t<meta
+        name=\"description\" content=\"AtCoder is a programming contest site for anyone
+        from beginners to experts. We hold weekly programming contests online.\">\n\t<meta
+        name=\"author\" content=\"AtCoder Inc.\">\n\n\t<meta property=\"og:site_name\"
+        content=\"AtCoder\">\n\t\n\t<meta property=\"og:title\" content=\"Tasks -
+        AtCoder Beginner Contest 150\" />\n\t<meta property=\"og:description\" content=\"AtCoder
+        is a programming contest site for anyone from beginners to experts. We hold
+        weekly programming contests online.\" />\n\t<meta property=\"og:type\" content=\"website\"
+        />\n\t<meta property=\"og:url\" content=\"https://atcoder.jp/contests/abc150/tasks\"
+        />\n\t<meta property=\"og:image\" content=\"https://img.atcoder.jp/assets/atcoder.png\"
+        />\n\t<meta name=\"twitter:card\" content=\"summary\" />\n\t<meta name=\"twitter:site\"
+        content=\"@atcoder\" />\n\t\n\t<meta property=\"twitter:title\" content=\"Tasks
+        - AtCoder Beginner Contest 150\" />\n\n\t<link href=\"//fonts.googleapis.com/css?family=Lato:400,700\"
+        rel=\"stylesheet\" type=\"text/css\">\n\t<link rel=\"stylesheet\" type=\"text/css\"
+        href=\"//img.atcoder.jp/public/ea27d23/css/bootstrap.min.css\">\n\t<link rel=\"stylesheet\"
+        type=\"text/css\" href=\"//img.atcoder.jp/public/ea27d23/css/base.css\">\n\t<link
+        rel=\"shortcut icon\" type=\"image/png\" href=\"//img.atcoder.jp/assets/favicon.png\">\n\t<link
+        rel=\"apple-touch-icon\" href=\"//img.atcoder.jp/assets/atcoder.png\">\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/lib/jquery-1.9.1.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/lib/bootstrap.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/js.cookie.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/moment.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/moment_js-ja.js\"></script>\n\t<script>\n\t\tvar
+        LANG = \"en\";\n\t\tvar userScreenName = \"\";\n\t\tvar csrfToken = \"SDZZhO9bTbzQqq6VGKcnWd2l6LlbfNiBVLyPm98KMr0=\"\n\t</script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/utils.js\"></script>\n\t\n\t\n\t\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/contest.js\"></script>\n\t\t<link
+        href=\"//img.atcoder.jp/public/ea27d23/css/contest.css\" rel=\"stylesheet\"
+        />\n\t\t<script>\n\t\t\tvar contestScreenName = \"abc150\";\n\t\t\tvar remainingText
+        = \"Remaining Time\";\n\t\t\tvar countDownText = \"Contest begins in\";\n\t\t\tvar
+        startTime = moment(\"2020-01-10T21:00:00+09:00\");\n\t\t\tvar endTime = moment(\"2020-01-10T22:40:00+09:00\");\n\t\t</script>\n\t\t<style></style>\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/base.js\"></script>\n</head>\n\n<body>\n\n<script
+        type=\"text/javascript\">\n\tvar __pParams = __pParams || [];\n\t__pParams.push({client_id:
+        '468', c_1: 'atcodercontest', c_2: 'ClientSite'});\n</script>\n<script type=\"text/javascript\"
+        src=\"https://cdn.d2-apps.net/js/tr.js\" async></script>\n\n\n<div id=\"modal-contest-start\"
+        class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n\t<div class=\"modal-dialog\"
+        role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header\">\n\t\t\t\t<button
+        type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span
+        aria-hidden=\"true\">&times;</span></button>\n\t\t\t\t<h4 class=\"modal-title\">Contest
+        started</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>AtCoder
+        Beginner Contest 150 has begun.</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t\n\t\t\t\t\t<button
+        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t\t\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<div
+        id=\"modal-contest-end\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n\t<div
+        class=\"modal-dialog\" role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div
+        class=\"modal-header\">\n\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\"
+        aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n\t\t\t\t<h4
+        class=\"modal-title\">Contest is over</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>AtCoder
+        Beginner Contest 150 has ended.</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button
+        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<div
+        id=\"main-div\" class=\"float-container\">\n\n\n\t<nav class=\"navbar navbar-inverse
+        navbar-fixed-top\">\n\t\t<div class=\"container-fluid\">\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<button
+        type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"
+        data-target=\"#navbar-collapse\" aria-expanded=\"false\">\n\t\t\t\t\t<span
+        class=\"icon-bar\"></span><span class=\"icon-bar\"></span><span class=\"icon-bar\"></span>\n\t\t\t\t</button>\n\t\t\t\t<a
+        class=\"navbar-brand\" href=\"/home\"></a>\n\t\t\t</div>\n\t\t\t<div class=\"collapse
+        navbar-collapse\" id=\"navbar-collapse\">\n\t\t\t\t<ul class=\"nav navbar-nav\">\n\t\t\t\t\n\t\t\t\t\t<li><a
+        class=\"contest-title\" href=\"/contests/abc150\">AtCoder Beginner Contest
+        150</a></li>\n\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t\t<ul class=\"nav navbar-nav
+        navbar-right\">\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t<a
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\"
+        aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t\t\t\t\t\t<img src='//img.atcoder.jp/assets/top/img/flag-lang/en.png'>
+        English <span class=\"caret\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<ul class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<li><a
+        href=\"/contests/abc150/tasks?lang=ja\"><img src='//img.atcoder.jp/assets/top/img/flag-lang/ja.png'>
+        日本語</a></li>\n\t\t\t\t\t\t\t<li><a href=\"/contests/abc150/tasks?lang=en\"><img
+        src='//img.atcoder.jp/assets/top/img/flag-lang/en.png'> English</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t<li><a
+        href=\"/register?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc150%2Ftasks\">Sign
+        Up</a></li>\n\t\t\t\t\t\t<li><a href=\"/login?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc150%2Ftasks\">Sign
+        In</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n\n\t<form
+        method=\"POST\" name=\"form_logout\" action=\"/logout?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc150%2Ftasks\">\n\t\t<input
+        type=\"hidden\" name=\"csrf_token\" value=\"SDZZhO9bTbzQqq6VGKcnWd2l6LlbfNiBVLyPm98KMr0=\"
+        />\n\t</form>\n\t<div id=\"main-container\" class=\"container\"\n\t\t \tstyle=\"padding-top:50px;\">\n\t\t\n\n\n<div
+        class=\"row\">\n\t<div id=\"contest-nav-tabs\" class=\"col-sm-12 mb-2 cnvtb-fixed\">\n\t<div>\n\t\t<small
+        class=\"contest-duration\">\n\t\t\t\n\t\t\t\tContest Duration:\n\t\t\t\t<a
+        href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=20200110T2100&p1=248'
+        target='blank'><time class='fixtime fixtime-full'>2020-01-10 21:00:00+0900</time></a>
+        - <a href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=20200110T2240&p1=248'
+        target='blank'><time class='fixtime fixtime-full'>2020-01-10 22:40:00+0900</time></a>
+        (local time)\n\t\t\t\t(100 minutes)\n\t\t\t\n\t\t</small>\n\t\t<small class=\"back-to-home
+        pull-right\"><a href=\"/home\">Back to Home</a></small>\n\t</div>\n\t<ul class=\"nav
+        nav-tabs\">\n\t\t<li><a href=\"/contests/abc150\"><span class=\"glyphicon
+        glyphicon-home\" aria-hidden=\"true\"></span> Top</a></li>\n\t\t\n\t\t\t<li
+        class=\"active\"><a href=\"/contests/abc150/tasks\"><span class=\"glyphicon
+        glyphicon-tasks\" aria-hidden=\"true\"></span> Tasks</a></li>\n\t\t\n\n\t\t\n\t\t\t<li><a
+        href=\"/contests/abc150/clarifications\"><span class=\"glyphicon glyphicon-question-sign\"
+        aria-hidden=\"true\"></span> Clarifications <span id=\"clar-badge\" class=\"badge\"></span></a></li>\n\t\t\n\n\t\t\n\n\t\t\n\t\t\t<li>\n\t\t\t\t<a
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\"
+        aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"glyphicon glyphicon-list\"
+        aria-hidden=\"true\"></span> Results<span class=\"caret\"></span></a>\n\t\t\t\t<ul
+        class=\"dropdown-menu\">\n\t\t\t\t\t<li><a href=\"/contests/abc150/submissions\"><span
+        class=\"glyphicon glyphicon-globe\" aria-hidden=\"true\"></span> All Submissions</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\n\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<li><a
+        href=\"/contests/abc150/standings\"><span class=\"glyphicon glyphicon-sort-by-attributes-alt\"
+        aria-hidden=\"true\"></span> Standings</a></li>\n\t\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<li><a
+        href=\"/contests/abc150/standings/virtual\"><span class=\"glyphicon glyphicon-sort-by-attributes-alt\"
+        aria-hidden=\"true\"></span> Virtual Standings</a></li>\n\t\t\t\t\n\t\t\t\n\t\t\n\n\t\t\n\n\t\t\n\t\t\t<li><a
+        href=\"/contests/abc150/editorial\"><span class=\"glyphicon glyphicon-book\"
+        aria-hidden=\"true\"></span> Editorial</a></li>\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t<li><a
+        href=\"https://codeforces.com/blog/entry/72955\" target=\"_blank\" rel=\"noopener\"><span
+        class=\"glyphicon glyphicon-comment\" aria-hidden=\"true\"></span> Discuss</a></li>\n\t\t\t\n\t\t\n\n\t\t<li
+        class=\"pull-right\"><a id=\"fix-cnvtb\" href=\"javascript:void(0)\"><span
+        class=\"glyphicon glyphicon-pushpin\" aria-hidden=\"true\"></span></a></li>\n\t</ul>\n</div>\n\t<div
+        class=\"col-sm-12\">\n\t\t<h2>Tasks</h2>\n\t\t<hr>\n\t\t\n\t\t\t<div class=\"panel
+        panel-default table-responsive\"><table class=\"table table-bordered table-striped\">\n\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th
+        width=\"3%\" class=\"text-center\"></th>\n\t\t\t\t\t\t<th>Task Name</th>\n\t\t\t\t\t\t<th
+        width=\"10%\" class=\"text-right no-break\">Time Limit</th>\n\t\t\t\t\t\t<th
+        width=\"10%\" class=\"text-right no-break\">Memory Limit</th>\n\t\t\t\t\t\t\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t<tbody>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/abc150/tasks/abc150_a\">A</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/abc150/tasks/abc150_a\">500 Yen Coins</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/abc150/tasks/abc150_b\">B</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/abc150/tasks/abc150_b\">Count ABC</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/abc150/tasks/abc150_c\">C</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/abc150/tasks/abc150_c\">Count Order</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/abc150/tasks/abc150_d\">D</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/abc150/tasks/abc150_d\">Semi Common Multiple</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/abc150/tasks/abc150_e\">E</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/abc150/tasks/abc150_e\">Change a Little Bit</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/abc150/tasks/abc150_f\">F</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/abc150/tasks/abc150_f\">Xor Shift</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t</tbody>\n\t\t\t</table></div>\n\t\t\n\t\t<p
+        class=\"btn-text-group\">\n\t\t\t\n\t\t\t\n\t\t\t<a class=\"btn-text\" href=\"/contests/abc150/tasks_print\">Tasks
+        for printing</a>\n\t\t</p>\n\t\t\n\t\t\n\t\t\n\t</div>\n</div>\n\n\n\n\n\t\t\n\t\t\t<hr>\n\t\t\t\n\t\t\t\n\t\t\t\n<div
+        class=\"a2a_kit a2a_kit_size_20 a2a_default_style pull-right\" data-a2a-url=\"https://atcoder.jp/contests/abc150/tasks?lang=en\"
+        data-a2a-title=\"Tasks - AtCoder Beginner Contest 150\">\n\t<a class=\"a2a_button_facebook\"></a>\n\t<a
+        class=\"a2a_button_twitter\"></a>\n\t\n\t\t<a class=\"a2a_button_telegram\"></a>\n\t\n\t<a
+        class=\"a2a_dd\" href=\"https://www.addtoany.com/share\"></a>\n</div>\n\n\t\t\n\t\t<script
+        async src=\"//static.addtoany.com/menu/page.js\"></script>\n\t\t\n\t</div>
+        \n\t<hr>\n</div> \n\n\t<div class=\"container\" style=\"margin-bottom: 80px;\">\n\t\t\t<footer
+        class=\"footer\">\n\t\t\t\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"/contests/abc150/rules\">Rule</a></li>\n\t\t\t\t\t<li><a
+        href=\"/contests/abc150/glossary\">Glossary</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t\n\t\t\t<ul>\n\t\t\t\t<li><a
+        href=\"/tos\">Terms of service</a></li>\n\t\t\t\t<li><a href=\"/privacy\">Privacy
+        Policy</a></li>\n\t\t\t\t<li><a href=\"/personal\">Information Protection
+        Policy</a></li>\n\t\t\t\t<li><a href=\"/company\">Company</a></li>\n\t\t\t\t<li><a
+        href=\"/faq\">FAQ</a></li>\n\t\t\t\t<li><a href=\"/contact\">Contact</a></li>\n\t\t\t\t\n\t\t\t</ul>\n\t\t\t<div
+        class=\"text-center\">\n\t\t\t\t\t<small id=\"copyright\">Copyright Since
+        2012 &copy;<a href=\"http://atcoder.co.jp\">AtCoder Inc.</a> All rights reserved.</small>\n\t\t\t</div>\n\t\t\t</footer>\n\t</div>\n\t<p
+        id=\"fixed-server-timer\" class=\"contest-timer\"></p>\n\t<div id=\"scroll-page-top\"
+        style=\"display:none;\"><span class=\"glyphicon glyphicon-arrow-up\" aria-hidden=\"true\"></span>
+        Page Top</div>\n\n</body>\n</html>\n\n\n"
+  recorded_at: Sun, 05 May 2024 04:42:48 GMT
+recorded_with: VCR 6.2.0

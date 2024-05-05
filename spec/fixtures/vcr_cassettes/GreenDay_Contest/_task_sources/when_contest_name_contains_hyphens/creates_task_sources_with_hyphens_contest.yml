@@ -1,0 +1,599 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://atcoder.jp/contests/math-and-algorithm/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/html; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      date:
+      - Sun, 05 May 2024 04:42:48 GMT
+      server:
+      - nginx
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - no-cache, no-store, must-revalidate, private
+      expires:
+      - Fri, 1 Jan 2010 00:00:00 GMT
+      pragma:
+      - no-cache
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-encoding:
+      - gzip
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 7d7a3c2bfaf3829a0c2cf20c167810ae.cloudfront.net (CloudFront)
+      x-amz-cf-pop:
+      - NRT12-C3
+      x-amz-cf-id:
+      - l7IpI2NRWeMcvT8Gp4vaMUOrE_Z1EsmgQn8E8cYVB4wMynfpwZMHmg==
+      x-frame-options:
+      - SAMEORIGIN
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "\n\n\n\n<!DOCTYPE html>\n<html>\n<head>\n\t<title>Tasks - アルゴリズムと数学　演習問題集</title>\n\t<meta
+        http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n\t<meta
+        http-equiv=\"Content-Language\" content=\"en\">\n\t<meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1.0\">\n\t<meta name=\"format-detection\"
+        content=\"telephone=no\">\n\t<meta name=\"google-site-verification\" content=\"nXGC_JxO0yoP1qBzMnYD_xgufO6leSLw1kyNo2HZltM\"
+        />\n\n\t\n\t<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-RC512FD18N\"></script>\n\t<script>\n\t\twindow.dataLayer
+        = window.dataLayer || [];\n\t\tfunction gtag(){dataLayer.push(arguments);}\n\t\tgtag('js',
+        new Date());\n\n\t\tgtag('config', 'G-RC512FD18N');\n\t</script>\n\n\t\n\t<meta
+        name=\"description\" content=\"AtCoder is a programming contest site for anyone
+        from beginners to experts. We hold weekly programming contests online.\">\n\t<meta
+        name=\"author\" content=\"AtCoder Inc.\">\n\n\t<meta property=\"og:site_name\"
+        content=\"AtCoder\">\n\t\n\t<meta property=\"og:title\" content=\"Tasks -
+        アルゴリズムと数学　演習問題集\" />\n\t<meta property=\"og:description\" content=\"AtCoder
+        is a programming contest site for anyone from beginners to experts. We hold
+        weekly programming contests online.\" />\n\t<meta property=\"og:type\" content=\"website\"
+        />\n\t<meta property=\"og:url\" content=\"https://atcoder.jp/contests/math-and-algorithm/tasks\"
+        />\n\t<meta property=\"og:image\" content=\"https://img.atcoder.jp/assets/atcoder.png\"
+        />\n\t<meta name=\"twitter:card\" content=\"summary\" />\n\t<meta name=\"twitter:site\"
+        content=\"@atcoder\" />\n\t\n\t<meta property=\"twitter:title\" content=\"Tasks
+        - アルゴリズムと数学　演習問題集\" />\n\n\t<link href=\"//fonts.googleapis.com/css?family=Lato:400,700\"
+        rel=\"stylesheet\" type=\"text/css\">\n\t<link rel=\"stylesheet\" type=\"text/css\"
+        href=\"//img.atcoder.jp/public/ea27d23/css/bootstrap.min.css\">\n\t<link rel=\"stylesheet\"
+        type=\"text/css\" href=\"//img.atcoder.jp/public/ea27d23/css/base.css\">\n\t<link
+        rel=\"shortcut icon\" type=\"image/png\" href=\"//img.atcoder.jp/assets/favicon.png\">\n\t<link
+        rel=\"apple-touch-icon\" href=\"//img.atcoder.jp/assets/atcoder.png\">\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/lib/jquery-1.9.1.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/lib/bootstrap.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/js.cookie.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/moment.min.js\"></script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/cdn/moment_js-ja.js\"></script>\n\t<script>\n\t\tvar
+        LANG = \"en\";\n\t\tvar userScreenName = \"\";\n\t\tvar csrfToken = \"ZqA2PnNm8I6dNxcWy33EGRp/SRUYp0cY+899MD4YslQ=\"\n\t</script>\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/utils.js\"></script>\n\t\n\t\n\t\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/contest.js\"></script>\n\t\t<link
+        href=\"//img.atcoder.jp/public/ea27d23/css/contest.css\" rel=\"stylesheet\"
+        />\n\t\t<script>\n\t\t\tvar contestScreenName = \"math-and-algorithm\";\n\t\t\tvar
+        remainingText = \"Remaining Time\";\n\t\t\tvar countDownText = \"Contest begins
+        in\";\n\t\t\tvar startTime = moment(\"2021-12-17T02:00:00+09:00\");\n\t\t\tvar
+        endTime = moment(\"3021-12-17T02:00:00+09:00\");\n\t\t</script>\n\t\t<style></style>\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t<script
+        src=\"//img.atcoder.jp/public/ea27d23/js/base.js\"></script>\n</head>\n\n<body>\n\n<script
+        type=\"text/javascript\">\n\tvar __pParams = __pParams || [];\n\t__pParams.push({client_id:
+        '468', c_1: 'atcodercontest', c_2: 'ClientSite'});\n</script>\n<script type=\"text/javascript\"
+        src=\"https://cdn.d2-apps.net/js/tr.js\" async></script>\n\n\n<div id=\"modal-contest-start\"
+        class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n\t<div class=\"modal-dialog\"
+        role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header\">\n\t\t\t\t<button
+        type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span
+        aria-hidden=\"true\">&times;</span></button>\n\t\t\t\t<h4 class=\"modal-title\">Contest
+        started</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>アルゴリズムと数学　演習問題集
+        has begun.</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t\n\t\t\t\t\t<button
+        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t\t\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<div
+        id=\"modal-contest-end\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n\t<div
+        class=\"modal-dialog\" role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div
+        class=\"modal-header\">\n\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\"
+        aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n\t\t\t\t<h4
+        class=\"modal-title\">Contest is over</h4>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t<p>アルゴリズムと数学　演習問題集
+        has ended.</p>\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button
+        type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<div
+        id=\"main-div\" class=\"float-container\">\n\n\n\t<nav class=\"navbar navbar-inverse
+        navbar-fixed-top\">\n\t\t<div class=\"container-fluid\">\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<button
+        type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"
+        data-target=\"#navbar-collapse\" aria-expanded=\"false\">\n\t\t\t\t\t<span
+        class=\"icon-bar\"></span><span class=\"icon-bar\"></span><span class=\"icon-bar\"></span>\n\t\t\t\t</button>\n\t\t\t\t<a
+        class=\"navbar-brand\" href=\"/home\"></a>\n\t\t\t</div>\n\t\t\t<div class=\"collapse
+        navbar-collapse\" id=\"navbar-collapse\">\n\t\t\t\t<ul class=\"nav navbar-nav\">\n\t\t\t\t\n\t\t\t\t\t<li><a
+        class=\"contest-title\" href=\"/contests/math-and-algorithm\">アルゴリズムと数学　演習問題集</a></li>\n\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t\t<ul
+        class=\"nav navbar-nav navbar-right\">\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t<a
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\"
+        aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t\t\t\t\t\t<img src='//img.atcoder.jp/assets/top/img/flag-lang/en.png'>
+        English <span class=\"caret\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<ul class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<li><a
+        href=\"/contests/math-and-algorithm/tasks?lang=ja\"><img src='//img.atcoder.jp/assets/top/img/flag-lang/ja.png'>
+        日本語</a></li>\n\t\t\t\t\t\t\t<li><a href=\"/contests/math-and-algorithm/tasks?lang=en\"><img
+        src='//img.atcoder.jp/assets/top/img/flag-lang/en.png'> English</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t<li><a
+        href=\"/register?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fmath-and-algorithm%2Ftasks\">Sign
+        Up</a></li>\n\t\t\t\t\t\t<li><a href=\"/login?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fmath-and-algorithm%2Ftasks\">Sign
+        In</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n\n\t<form
+        method=\"POST\" name=\"form_logout\" action=\"/logout?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fmath-and-algorithm%2Ftasks\">\n\t\t<input
+        type=\"hidden\" name=\"csrf_token\" value=\"ZqA2PnNm8I6dNxcWy33EGRp/SRUYp0cY&#43;899MD4YslQ=\"
+        />\n\t</form>\n\t<div id=\"main-container\" class=\"container\"\n\t\t \tstyle=\"padding-top:50px;\">\n\t\t\n\n\n<div
+        class=\"row\">\n\t<div id=\"contest-nav-tabs\" class=\"col-sm-12 mb-2 cnvtb-fixed\">\n\t<div>\n\t\t<small
+        class=\"contest-duration\">\n\t\t\t\n\t\t\t\tContest Duration:\n\t\t\t\t<a
+        href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=20211217T0200&p1=248'
+        target='blank'><time class='fixtime fixtime-full'>2021-12-17 02:00:00+0900</time></a>
+        - <a href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=30211217T0200&p1=248'
+        target='blank'><time class='fixtime fixtime-full'>3021-12-17 02:00:00+0900</time></a>
+        (local time)\n\t\t\t\t\n\t\t\t\n\t\t</small>\n\t\t<small class=\"back-to-home
+        pull-right\"><a href=\"/home\">Back to Home</a></small>\n\t</div>\n\t<ul class=\"nav
+        nav-tabs\">\n\t\t<li><a href=\"/contests/math-and-algorithm\"><span class=\"glyphicon
+        glyphicon-home\" aria-hidden=\"true\"></span> Top</a></li>\n\t\t\n\t\t\t<li
+        class=\"active\"><a href=\"/contests/math-and-algorithm/tasks\"><span class=\"glyphicon
+        glyphicon-tasks\" aria-hidden=\"true\"></span> Tasks</a></li>\n\t\t\n\n\t\t\n\t\t\t<li><a
+        href=\"/contests/math-and-algorithm/clarifications\"><span class=\"glyphicon
+        glyphicon-question-sign\" aria-hidden=\"true\"></span> Clarifications <span
+        id=\"clar-badge\" class=\"badge\"></span></a></li>\n\t\t\n\n\t\t\n\n\t\t\n\t\t\t<li>\n\t\t\t\t<a
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\"
+        aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"glyphicon glyphicon-list\"
+        aria-hidden=\"true\"></span> Results<span class=\"caret\"></span></a>\n\t\t\t\t<ul
+        class=\"dropdown-menu\">\n\t\t\t\t\t<li><a href=\"/contests/math-and-algorithm/submissions\"><span
+        class=\"glyphicon glyphicon-globe\" aria-hidden=\"true\"></span> All Submissions</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\n\n\t\t\n\t\t\t\n\t\t\n\n\t\t\n\n\t\t\n\t\t\t<li><a
+        href=\"/contests/math-and-algorithm/editorial\"><span class=\"glyphicon glyphicon-book\"
+        aria-hidden=\"true\"></span> Editorial</a></li>\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\t\t<li
+        class=\"pull-right\"><a id=\"fix-cnvtb\" href=\"javascript:void(0)\"><span
+        class=\"glyphicon glyphicon-pushpin\" aria-hidden=\"true\"></span></a></li>\n\t</ul>\n</div>\n\t<div
+        class=\"col-sm-12\">\n\t\t<h2>Tasks</h2>\n\t\t<hr>\n\t\t\n\t\t\t<div class=\"panel
+        panel-default table-responsive\"><table class=\"table table-bordered table-striped\">\n\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th
+        width=\"3%\" class=\"text-center\"></th>\n\t\t\t\t\t\t<th>Task Name</th>\n\t\t\t\t\t\t<th
+        width=\"10%\" class=\"text-right no-break\">Time Limit</th>\n\t\t\t\t\t\t<th
+        width=\"10%\" class=\"text-right no-break\">Memory Limit</th>\n\t\t\t\t\t\t\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t<tbody>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_a\">001</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_a\">Print 5&#43;N</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_b\">002</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_b\">Sum of 3
+        Integers</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_c\">003</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_c\">Sum of N
+        Integers</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_d\">004</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_d\">Product of
+        3 Integers</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_e\">005</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_e\">Modulo 100</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_f\">006</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_f\">Print 2N&#43;3</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_g\">007</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_g\">Number of
+        Multiples 1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_h\">008</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_h\">Brute Force
+        1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_i\">009</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_i\">Brute Force
+        2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_j\">010</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_j\">Factorial</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_k\">011</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_k\">Print Prime
+        Numbers</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_l\">012</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_l\">Primality
+        Test</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_m\">013</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_m\">Divisor Enumeration</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_n\">014</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_n\">Factorization</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_o\">015</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_o\">Calculate
+        GCD</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_p\">016</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_p\">Greatest
+        Common Divisor of N Integers</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2
+        sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_q\">017</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_q\">Least Common
+        Multiple of N Integers</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2
+        sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_r\">018</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_r\">Convenience
+        Store 1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_s\">019</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_s\">Choose Cards
+        1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_t\">020</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_t\">Choose Cards
+        2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">5 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_u\">021</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_u\">Combination
+        Easy</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_v\">022</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_v\">Choose Cards
+        3</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_w\">023</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_w\">Dice Expectation</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_x\">024</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_x\">Answer Exam
+        Randomly</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_y\">025</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_y\">Jiro&#39;s
+        Vacation</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_z\">026</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_z\">Coin Gacha</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aa\">027</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aa\">Sorting</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/dp_a\">028</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/dp_a\">Frog 1</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ab\">029</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ab\">Climb Stairs</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/dp_d\">030</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/dp_d\">Knapsack 1</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ac\">031</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ac\">Taro&#39;s
+        Vacation</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ad\">032</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ad\">Binary Search</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ae\">033</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ae\">Distance</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_af\">034</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_af\">Nearest
+        Points</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ag\">035</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ag\">Two Circles</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc168_c\">036</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc168_c\">: (Colon)</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ah\">037</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ah\">Intersection</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ai\">038</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ai\">How Many
+        Guests?</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aj\">039</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aj\">Snowy Days</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ak\">040</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ak\">Travel</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_al\">041</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_al\">Convenience
+        Store 2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">6 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc172_d\">042</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc172_d\">Sum of Divisors</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_am\">043</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_am\">Depth First
+        Search</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_an\">044</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_an\">Shortest
+        Path 1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_bz\">045</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_bz\">Easy Graph Problem（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc007_3\">046</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc007_3\">幅優先探索</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">256
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ao\">047</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ao\">Bipartite
+        Graph</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/arc084_b\">048</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/arc084_b\">Small Multiple</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">256
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ap\">049</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ap\">Fibonacci
+        Easy (mod 1000000007)</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">10
+        sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aq\">050</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aq\">Power</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ar\">051</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ar\">Combination
+        Hard</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc145_d\">052</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc145_d\">Knight</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_as\">053</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_as\">Sum of 4^N</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_at\">054</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_at\">Fibonacci
+        Hard (mod 1000000000)</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_au\">055</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_au\">Recurrence
+        Formula 1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_av\">056</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_av\">Recurrence
+        Formula 2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aw\">057</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_aw\">Domino Tiling</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ax\">058</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ax\">Move on
+        Squares 1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ay\">059</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ay\">Power of
+        Two</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_az\">060</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_az\">Stones Game
+        1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ba\">061</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_ba\">Stones Game
+        2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc167_d\">062</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc167_d\">Teleporter</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bb\">063</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bb\">Move on
+        Squares 2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bc\">064</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bc\">All Zero</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/panasonic2020_b\">065</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/panasonic2020_b\">Bishop</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bd\">066</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bd\">Three Cards</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_d\">067</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_d\">Cross Sum（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">5 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_be\">068</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_be\">Number of
+        Multiples 2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc178_b\">069</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc178_b\">Product Max</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc075_d\">070</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc075_d\">Axis-Parallel Rectangle</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">256
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bf\">071</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bf\">Linear Programming</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">10 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/jsc2021_c\">072</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/jsc2021_c\">Max GCD 2</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bg\">073</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bg\">Sum of Maximum</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bh\">074</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bh\">Sum of difference
+        Easy</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bi\">075</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bi\">Pyramid</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc186_d\">076</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc186_d\">Sum of difference</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bj\">077</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bj\">Distance
+        Sum</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bk\">078</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bk\">Difference
+        Optimization 1</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc139_d\">079</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc139_d\">ModSum</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bl\">080</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bl\">Difference
+        Optimization 2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bm\">081</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bm\">Bill Changing
+        Problem</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bn\">082</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bn\">Interval
+        Scheduling Problem</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_n\">083</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_n\">We Used to Sing a
+        Song Together（★3）</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/panasonic2020_c\">084</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/panasonic2020_c\">Sqrt Inequality</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bo\">085</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bo\">Two Conditions</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">5 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bp\">086</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bp\">Parentheses
+        Check</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bq\">087</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bq\">Simple Math
+        Easy</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/arc107_a\">088</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/arc107_a\">Simple Math</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_by\">089</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_by\">Log Inequality
+        2</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_y\">090</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_y\">Digit Product Equation（★7）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_br\">091</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_br\">How Many
+        Ways?</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bs\">092</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bs\">Beautiful
+        Rectangle</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_al\">093</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_al\">Large LCM（★3）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc140_c\">094</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc140_c\">Maximal Value</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_j\">095</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_j\">Score Sum Queries（★2）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/abc204_d\">096</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/abc204_d\">Cooking</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bt\">097</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bt\">Primes in
+        an Interval</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bu\">098</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bu\">Polygon
+        and Point</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_am\">099</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_am\">Tree Distance（★5）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bv\">100</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bv\">Simulation
+        of Chemicals</a></td>\n\t\t\t\t\t\t\t<td class=\"text-right\">3 sec</td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">1024 MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/typical90_o\">101</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/typical90_o\">Don&#39;t be too close（★6）</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/arc117_c\">102</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/arc117_c\">Tricolor Pyramid</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bw\">103</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bw\">Circle Packing</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td
+        class=\"text-center no-break\"><a href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bx\">104</a></td>\n\t\t\t\t\t\t\t<td><a
+        href=\"/contests/math-and-algorithm/tasks/math_and_algorithm_bx\">Graph Master</a></td>\n\t\t\t\t\t\t\t<td
+        class=\"text-right\">2 sec</td>\n\t\t\t\t\t\t\t<td class=\"text-right\">1024
+        MB</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\n\t\t\t\t</tbody>\n\t\t\t</table></div>\n\t\t\n\t\t<p
+        class=\"btn-text-group\">\n\t\t\t\n\t\t\t\n\t\t\t<a class=\"btn-text\" href=\"/contests/math-and-algorithm/tasks_print\">Tasks
+        for printing</a>\n\t\t</p>\n\t\t\n\t\t\n\t\t\n\t</div>\n</div>\n\n\n\n\n\t\t\n\t\t\t<hr>\n\t\t\t\n\t\t\t\n\t\t\t\n<div
+        class=\"a2a_kit a2a_kit_size_20 a2a_default_style pull-right\" data-a2a-url=\"https://atcoder.jp/contests/math-and-algorithm/tasks?lang=en\"
+        data-a2a-title=\"Tasks - アルゴリズムと数学　演習問題集\">\n\t<a class=\"a2a_button_facebook\"></a>\n\t<a
+        class=\"a2a_button_twitter\"></a>\n\t\n\t\t<a class=\"a2a_button_telegram\"></a>\n\t\n\t<a
+        class=\"a2a_dd\" href=\"https://www.addtoany.com/share\"></a>\n</div>\n\n\t\t\n\t\t<script
+        async src=\"//static.addtoany.com/menu/page.js\"></script>\n\t\t\n\t</div>
+        \n\t<hr>\n</div> \n\n\t<div class=\"container\" style=\"margin-bottom: 80px;\">\n\t\t\t<footer
+        class=\"footer\">\n\t\t\t\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"/contests/math-and-algorithm/rules\">Rule</a></li>\n\t\t\t\t\t<li><a
+        href=\"/contests/math-and-algorithm/glossary\">Glossary</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t\n\t\t\t<ul>\n\t\t\t\t<li><a
+        href=\"/tos\">Terms of service</a></li>\n\t\t\t\t<li><a href=\"/privacy\">Privacy
+        Policy</a></li>\n\t\t\t\t<li><a href=\"/personal\">Information Protection
+        Policy</a></li>\n\t\t\t\t<li><a href=\"/company\">Company</a></li>\n\t\t\t\t<li><a
+        href=\"/faq\">FAQ</a></li>\n\t\t\t\t<li><a href=\"/contact\">Contact</a></li>\n\t\t\t\t\n\t\t\t</ul>\n\t\t\t<div
+        class=\"text-center\">\n\t\t\t\t\t<small id=\"copyright\">Copyright Since
+        2012 &copy;<a href=\"http://atcoder.co.jp\">AtCoder Inc.</a> All rights reserved.</small>\n\t\t\t</div>\n\t\t\t</footer>\n\t</div>\n\t<p
+        id=\"fixed-server-timer\" class=\"contest-timer\"></p>\n\t<div id=\"scroll-page-top\"
+        style=\"display:none;\"><span class=\"glyphicon glyphicon-arrow-up\" aria-hidden=\"true\"></span>
+        Page Top</div>\n\n</body>\n</html>\n\n\n"
+  recorded_at: Sun, 05 May 2024 04:42:48 GMT
+recorded_with: VCR 6.2.0

@@ -5,7 +5,7 @@ require 'colorize'
 require 'io/console'
 require_relative 'atcoder_client'
 require_relative 'contest'
-require_relative 'test_builder'
+require_relative 'task_source_to_file_worker'
 
 module GreenDay
   class Cli < Thor
@@ -28,33 +28,8 @@ module GreenDay
       contest = Contest.new(contest_name)
       FileUtils.makedirs("#{contest.name}/spec")
 
-      contest.tasks.map do |task|
-        create_files_in_thread(task)
-      end.each(&:join)
-
+      TaskSourceToFileWorker.run_threads(contest.task_sources).each(&:join)
       puts "Successfully created #{contest.name} directory".colorize(:green)
-    end
-
-    private
-
-    def create_files_in_thread(task)
-      Thread.new do
-        create_task_file(task)
-        create_task_spec_file(task)
-      end
-    end
-
-    def create_task_file(task)
-      FileUtils.touch(task_file_name(task))
-    end
-
-    def create_task_spec_file(task)
-      test_content = TestBuilder.build_test(task_file_name(task), task.sample_answers)
-      File.write("#{task.contest.name}/spec/#{task.name}_spec.rb", test_content)
-    end
-
-    def task_file_name(task)
-      "#{task.contest.name}/#{task.name}.rb"
     end
   end
 end

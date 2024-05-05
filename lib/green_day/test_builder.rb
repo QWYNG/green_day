@@ -4,10 +4,10 @@ module GreenDay
   module TestBuilder
     module_function
 
-    def build_test(submit_file_path, input_output_hash)
+    def build_test(submit_file_path, sample_answers)
       <<~SPEC
         RSpec.describe '#{submit_file_path}' do
-        #{input_output_hash.map { |input, output| build_example(submit_file_path, input, output) }.join("\n")}
+        #{sample_answers.map { |sample_answer| build_example(submit_file_path, sample_answer.input, sample_answer.output) }.join("\n")}
         end
       SPEC
     end
