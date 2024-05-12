@@ -12,7 +12,15 @@ module GreenDay
     end
 
     def create_file
-      FileUtils.touch(file_name)
+      template = if File.exist?(GreenDay::TEMPLATE_FILE_PATH)
+                   File.read(GreenDay::TEMPLATE_FILE_PATH)
+                 end
+
+      File.write(file_name, template)
+    end
+
+    def file_name
+      "#{contest_name}/#{name}.rb"
     end
 
     def create_spec_file
@@ -40,10 +48,6 @@ module GreenDay
       inputs, outputs = samples.partition.with_index { |_sample, i| i.even? }
 
       [inputs, outputs]
-    end
-
-    def file_name
-      "#{contest_name}/#{name}.rb"
     end
   end
 end
