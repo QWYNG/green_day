@@ -21,17 +21,17 @@ Or install it yourself as:
 login(this command stores your cookie as `.cookie-store` in current directory)
 
     $ bundle exec green_day login
-    
+
 If you want to delete session, remove `.cookie-store`
-    
+
 This command creates directory and spec.
-   
+
     $ bundle exec green_day new <contest-name>
 
-For example 
-   
+For example
+
     $ bundle exec green_day new abc150
-   
+
    ```
     abc150
     ├── A.rb
@@ -48,69 +48,35 @@ For example
         ├── E_spec.rb
         └── F_spec.rb
    ```
-   
+
    Example of output spec
 
 ```ruby
 RSpec.describe 'abc150/A.rb' do
   it 'test with "2 900\n"' do
-    if ENV['GD_REPL']
-      File.chmod(0o755, 'abc150/A.rb')
-      system(%q(expect -c 'set timeout 2; spawn ruby abc150/A.rb; send "2 900\n\\004"; interact'))
-    else
-      io = IO.popen('ruby abc150/A.rb', 'w+')
-      io.puts("2 900\n")
-      io.close_write
-      expect(io.readlines.join).to eq("Yes\n")
-    end
+    io = IO.popen('ruby abc150/A.rb', 'w+')
+    io.puts("2 900\n")
+    io.close_write
+    expect(io.readlines.join).to eq("Yes\n")
   end
 
   it 'test with "1 501\n"' do
-    if ENV['GD_REPL']
-      File.chmod(0o755, 'abc150/A.rb')
-      system(%q(expect -c 'set timeout 2; spawn ruby abc150/A.rb; send "1 501\n\\004"; interact'))
-    else
-      io = IO.popen('ruby abc150/A.rb', 'w+')
-      io.puts("1 501\n")
-      io.close_write
-      expect(io.readlines.join).to eq("No\n")
-    end
+    io = IO.popen('ruby abc150/A.rb', 'w+')
+    io.puts("1 501\n")
+    io.close_write
+    expect(io.readlines.join).to eq("No\n")
   end
 
   it 'test with "4 2000\n"' do
-    if ENV['GD_REPL']
-      File.chmod(0o755, 'abc150/A.rb')
-      system(%q(expect -c 'set timeout 2; spawn ruby abc150/A.rb; send "4 2000\n\\004"; interact'))
-    else
-      io = IO.popen('ruby abc150/A.rb', 'w+')
-      io.puts("4 2000\n")
-      io.close_write
-      expect(io.readlines.join).to eq("Yes\n")
-    end
+    io = IO.popen('ruby abc150/A.rb', 'w+')
+    io.puts("4 2000\n")
+    io.close_write
+    expect(io.readlines.join).to eq("Yes\n")
   end
 
 end
-
 ```
-## Debugging with REPL
-You can debug your code with sample input and REPL by setting `GD_REPL` environment variable.
 
-```
-$ GD_REPL=1 bundle exec rspec abc150/spec/A_spec.rb
-
-abc150/A.rb
-spawn ruby abc150/A.rb
-2 900
-
-From: abc150/A.rb @ line 2 :
-
-    1: a, b = gets.split.map(&:to_i)
- => 2: binding.irb
-    3: puts "Yes"
-
-irb(main):001:0> a
-=> 2
-```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
