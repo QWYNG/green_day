@@ -49,7 +49,7 @@ For example
         └── F_spec.rb
    ```
 
-   Example of output spec
+### Example of output spec
 
 ```ruby
 RSpec.describe 'abc150/A.rb' do
@@ -75,6 +75,15 @@ RSpec.describe 'abc150/A.rb' do
   end
 
 end
+```
+
+### template
+You can use template file for creating spec.
+GreenDay uses `template.rb` in the working directory as a template file.
+
+```ruby
+requires "math"
+x = gets.to_i
 ```
 
 ## Development
