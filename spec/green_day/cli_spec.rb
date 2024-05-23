@@ -46,39 +46,24 @@ RSpec.describe GreenDay::Cli, :vcr do
         <<~SPEC
           RSpec.describe 'abc150/A.rb' do
             it 'test with "2 900\\n"' do
-              if ENV['GD_REPL']
-                File.chmod(0o755, 'abc150/A.rb')
-                system(%q(expect -c 'set timeout 2; spawn ruby abc150/A.rb; send "2 900\\n\\\\004"; interact'))
-              else
-                io = IO.popen('ruby abc150/A.rb', 'w+')
-                io.puts("2 900\\n")
-                io.close_write
-                expect(io.readlines.join).to eq("Yes\\n")
-              end
+              io = IO.popen('ruby abc150/A.rb', 'w+')
+              io.puts("2 900\\n")
+              io.close_write
+              expect(io.readlines.join).to eq("Yes\\n")
             end
 
             it 'test with "1 501\\n"' do
-              if ENV['GD_REPL']
-                File.chmod(0o755, 'abc150/A.rb')
-                system(%q(expect -c 'set timeout 2; spawn ruby abc150/A.rb; send "1 501\\n\\\\004"; interact'))
-              else
-                io = IO.popen('ruby abc150/A.rb', 'w+')
-                io.puts("1 501\\n")
-                io.close_write
-                expect(io.readlines.join).to eq("No\\n")
-              end
+              io = IO.popen('ruby abc150/A.rb', 'w+')
+              io.puts("1 501\\n")
+              io.close_write
+              expect(io.readlines.join).to eq("No\\n")
             end
 
             it 'test with "4 2000\\n"' do
-              if ENV['GD_REPL']
-                File.chmod(0o755, 'abc150/A.rb')
-                system(%q(expect -c 'set timeout 2; spawn ruby abc150/A.rb; send "4 2000\\n\\\\004"; interact'))
-              else
-                io = IO.popen('ruby abc150/A.rb', 'w+')
-                io.puts("4 2000\\n")
-                io.close_write
-                expect(io.readlines.join).to eq("Yes\\n")
-              end
+              io = IO.popen('ruby abc150/A.rb', 'w+')
+              io.puts("4 2000\\n")
+              io.close_write
+              expect(io.readlines.join).to eq("Yes\\n")
             end
 
           end
