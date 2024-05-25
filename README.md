@@ -77,8 +77,8 @@ RSpec.describe 'abc150/A.rb' do
 end
 ```
 
-### template
-You can use template file for creating spec.
+### Template
+You can use a template file for creating specs.
 GreenDay uses `template.rb` in the working directory as a template file.
 
 ```ruby
