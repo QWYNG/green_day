@@ -18,7 +18,17 @@ Or install it yourself as:
     $ gem install green_day
 
 ## Usage
-login(this command stores your cookie as `.cookie-store` in current directory)
+
+### Login
+
+⚠️ **Important Notice**: AtCoder has implemented human verification (CAPTCHA) for login. Automated login may not work reliably.
+
+If the login command fails, you can manually create a session:
+1. Log in to AtCoder in your browser at https://atcoder.jp/login
+2. Export your session cookie and save it as `.cookie-store` in your working directory
+3. The tool will use this cookie for authenticated requests
+
+To attempt automated login (may fail due to CAPTCHA):
 
     $ bundle exec green_day login
 
@@ -76,6 +86,34 @@ RSpec.describe 'abc150/A.rb' do
 
 end
 ```
+
+### Manual Cookie Setup (Workaround for Login Issues)
+
+If automated login fails due to CAPTCHA verification, you can manually set up authentication:
+
+1. **Log in to AtCoder** in your web browser at https://atcoder.jp/login
+2. **Export your session cookie** using one of these methods:
+   - Browser Developer Tools: Open DevTools → Application/Storage → Cookies → Copy `REVEL_SESSION` cookie
+   - Browser Extension: Use a cookie export extension to save cookies in HTTP::Cookie YAML format
+3. **Create `.cookie-store` file** in your project directory with this format:
+   ```yaml
+   ---
+   - !ruby/object:HTTP::Cookie
+     name: REVEL_SESSION
+     value: YOUR_SESSION_VALUE_HERE
+     domain: atcoder.jp
+     for_domain: false
+     path: "/"
+     secure: false
+     httponly: true
+     expires:
+     max_age: 604800
+     created_at: 2026-01-31 00:00:00.000000000 Z
+     accessed_at: 2026-01-31 00:00:00.000000000 Z
+   ```
+4. **Update timestamps** to current date and adjust `max_age` (in seconds) as needed
+
+After setting up the cookie file, you can use `green_day new` command without needing to login again.
 
 ### Template
 You can use a template file for creating specs.

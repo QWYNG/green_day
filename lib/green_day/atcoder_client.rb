@@ -39,6 +39,13 @@ module GreenDay
     end
 
     def login(username, password)
+      warn '⚠️  WARNING: AtCoder has implemented human verification (CAPTCHA) for login.'
+      warn '   Automated login may fail. If it does, please:'
+      warn '   1. Log in manually at https://atcoder.jp/login in your browser'
+      warn '   2. Export your session cookie and create a .cookie-store file'
+      warn '   3. Or wait for future updates to support the new login flow'
+      warn ''
+
       csrf_token = obtain_atcoder_csrf_token
 
       conn.post('/login',
