@@ -13,6 +13,10 @@ module GreenDay
   class Cli < Thor
     desc 'login Atcoder', 'login Atcoder and save session'
     def login
+      puts '⚠️  AtCoder has implemented human verification (CAPTCHA).'.colorize(:yellow)
+      puts 'Automated login may fail. See README for manual setup instructions.'.colorize(:yellow)
+      puts ''
+
       print 'username:'
       username = $stdin.gets(chomp: true)
       print 'password:'
