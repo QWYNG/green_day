@@ -18,7 +18,9 @@ Or install it yourself as:
     $ gem install green_day
 
 ## Usage
-login(this command stores your cookie as `.cookie-store` in current directory)
+login(this command stores your cookie as `.cookie-store` in current directory)  
+**Login is currently experiencing issues and is not functioning.
+Creating rspecs for past problems is possible without logging in, so please use this gem for practicing past problems.**
 
     $ bundle exec green_day login
 
