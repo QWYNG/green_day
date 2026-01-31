@@ -18,11 +18,11 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Ruby 3.2
+      - uses: actions/checkout@v5
+      - name: Set up Ruby 3.4
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2
+          ruby-version: 3.4
 
       - run: bundle install
 
