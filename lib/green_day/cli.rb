@@ -3,6 +3,8 @@
 require 'thor'
 require 'colorize'
 require 'io/console'
+require 'fileutils'
+
 require_relative 'atcoder_client'
 require_relative 'contest'
 require_relative 'task_source_to_file_worker'

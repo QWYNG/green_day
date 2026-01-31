@@ -8,6 +8,8 @@ gemspec
 gem 'bundler', '~> 2.0'
 gem 'codecov'
 gem 'dotenv'
+gem 'logger'
+gem 'ostruct'
 gem 'rake', '>= 12.3.3'
 gem 'rspec', '~> 3.0'
 gem 'rubocop'
